@@ -418,9 +418,9 @@
             // 
             // iconButton10
             // 
-            iconButton10.BackColor = Color.FromArgb(3, 57, 135);
+            iconButton10.BackColor = Color.FromArgb(142, 197, 130);
             iconButton10.Dock = DockStyle.Top;
-            iconButton10.FlatAppearance.MouseOverBackColor = Color.FromArgb(7, 34, 76);
+            iconButton10.FlatAppearance.MouseOverBackColor = Color.FromArgb(96, 133, 88);
             iconButton10.FlatStyle = FlatStyle.Flat;
             iconButton10.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
             iconButton10.ForeColor = Color.White;
@@ -429,18 +429,18 @@
             iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton10.IconSize = 40;
             iconButton10.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton10.Location = new Point(0, 644);
+            iconButton10.Location = new Point(0, 654);
             iconButton10.Name = "iconButton10";
-            iconButton10.Size = new Size(250, 82);
-            iconButton10.TabIndex = 45;
+            iconButton10.Size = new Size(250, 75);
+            iconButton10.TabIndex = 53;
             iconButton10.Text = "Salir";
             iconButton10.UseVisualStyleBackColor = false;
             // 
             // iconButton9
             // 
-            iconButton9.BackColor = Color.FromArgb(3, 57, 135);
+            iconButton9.BackColor = Color.FromArgb(142, 197, 130);
             iconButton9.Dock = DockStyle.Top;
-            iconButton9.FlatAppearance.MouseOverBackColor = Color.FromArgb(7, 34, 76);
+            iconButton9.FlatAppearance.MouseOverBackColor = Color.FromArgb(96, 133, 88);
             iconButton9.FlatStyle = FlatStyle.Flat;
             iconButton9.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
             iconButton9.ForeColor = Color.White;
@@ -449,18 +449,18 @@
             iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton9.IconSize = 40;
             iconButton9.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton9.Location = new Point(0, 563);
+            iconButton9.Location = new Point(0, 579);
             iconButton9.Name = "iconButton9";
-            iconButton9.Size = new Size(250, 81);
-            iconButton9.TabIndex = 44;
+            iconButton9.Size = new Size(250, 75);
+            iconButton9.TabIndex = 52;
             iconButton9.Text = "Usuarios";
             iconButton9.UseVisualStyleBackColor = false;
             // 
             // iconButton7
             // 
-            iconButton7.BackColor = Color.FromArgb(3, 57, 135);
+            iconButton7.BackColor = Color.FromArgb(142, 197, 130);
             iconButton7.Dock = DockStyle.Top;
-            iconButton7.FlatAppearance.MouseOverBackColor = Color.FromArgb(7, 34, 76);
+            iconButton7.FlatAppearance.MouseOverBackColor = Color.FromArgb(96, 133, 88);
             iconButton7.FlatStyle = FlatStyle.Flat;
             iconButton7.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
             iconButton7.ForeColor = Color.White;
@@ -469,18 +469,18 @@
             iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton7.IconSize = 40;
             iconButton7.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton7.Location = new Point(0, 482);
+            iconButton7.Location = new Point(0, 504);
             iconButton7.Name = "iconButton7";
-            iconButton7.Size = new Size(250, 81);
-            iconButton7.TabIndex = 43;
+            iconButton7.Size = new Size(250, 75);
+            iconButton7.TabIndex = 51;
             iconButton7.Text = "Inventario";
             iconButton7.UseVisualStyleBackColor = false;
             // 
             // iconButton6
             // 
-            iconButton6.BackColor = Color.FromArgb(3, 57, 135);
+            iconButton6.BackColor = Color.FromArgb(142, 197, 130);
             iconButton6.Dock = DockStyle.Top;
-            iconButton6.FlatAppearance.MouseOverBackColor = Color.FromArgb(7, 34, 76);
+            iconButton6.FlatAppearance.MouseOverBackColor = Color.FromArgb(96, 133, 88);
             iconButton6.FlatStyle = FlatStyle.Flat;
             iconButton6.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
             iconButton6.ForeColor = Color.White;
@@ -489,18 +489,18 @@
             iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton6.IconSize = 40;
             iconButton6.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton6.Location = new Point(0, 401);
+            iconButton6.Location = new Point(0, 429);
             iconButton6.Name = "iconButton6";
-            iconButton6.Size = new Size(250, 81);
-            iconButton6.TabIndex = 42;
+            iconButton6.Size = new Size(250, 75);
+            iconButton6.TabIndex = 50;
             iconButton6.Text = "Clientes";
             iconButton6.UseVisualStyleBackColor = false;
             // 
             // iconButton3
             // 
-            iconButton3.BackColor = Color.FromArgb(3, 57, 135);
+            iconButton3.BackColor = Color.FromArgb(142, 197, 130);
             iconButton3.Dock = DockStyle.Top;
-            iconButton3.FlatAppearance.MouseOverBackColor = Color.FromArgb(7, 34, 76);
+            iconButton3.FlatAppearance.MouseOverBackColor = Color.FromArgb(96, 133, 88);
             iconButton3.FlatStyle = FlatStyle.Flat;
             iconButton3.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
             iconButton3.ForeColor = Color.White;
@@ -509,18 +509,18 @@
             iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton3.IconSize = 40;
             iconButton3.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton3.Location = new Point(0, 320);
+            iconButton3.Location = new Point(0, 354);
             iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(250, 81);
-            iconButton3.TabIndex = 41;
+            iconButton3.Size = new Size(250, 75);
+            iconButton3.TabIndex = 49;
             iconButton3.Text = "Productos";
             iconButton3.UseVisualStyleBackColor = false;
             // 
             // iconButton2
             // 
-            iconButton2.BackColor = Color.FromArgb(3, 57, 135);
+            iconButton2.BackColor = Color.FromArgb(142, 197, 130);
             iconButton2.Dock = DockStyle.Top;
-            iconButton2.FlatAppearance.MouseOverBackColor = Color.FromArgb(7, 34, 76);
+            iconButton2.FlatAppearance.MouseOverBackColor = Color.FromArgb(96, 133, 88);
             iconButton2.FlatStyle = FlatStyle.Flat;
             iconButton2.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
             iconButton2.ForeColor = Color.White;
@@ -529,18 +529,18 @@
             iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton2.IconSize = 40;
             iconButton2.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton2.Location = new Point(0, 239);
+            iconButton2.Location = new Point(0, 279);
             iconButton2.Name = "iconButton2";
-            iconButton2.Size = new Size(250, 81);
-            iconButton2.TabIndex = 40;
+            iconButton2.Size = new Size(250, 75);
+            iconButton2.TabIndex = 48;
             iconButton2.Text = "Ventas";
             iconButton2.UseVisualStyleBackColor = false;
             // 
             // iconButton1
             // 
-            iconButton1.BackColor = Color.FromArgb(3, 57, 135);
+            iconButton1.BackColor = Color.FromArgb(142, 197, 130);
             iconButton1.Dock = DockStyle.Top;
-            iconButton1.FlatAppearance.MouseOverBackColor = Color.FromArgb(7, 34, 76);
+            iconButton1.FlatAppearance.MouseOverBackColor = Color.FromArgb(96, 133, 88);
             iconButton1.FlatStyle = FlatStyle.Flat;
             iconButton1.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
             iconButton1.ForeColor = Color.White;
@@ -549,10 +549,10 @@
             iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton1.IconSize = 40;
             iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton1.Location = new Point(0, 158);
+            iconButton1.Location = new Point(0, 204);
             iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(250, 81);
-            iconButton1.TabIndex = 39;
+            iconButton1.Size = new Size(250, 75);
+            iconButton1.TabIndex = 47;
             iconButton1.Text = "Inicio";
             iconButton1.UseVisualStyleBackColor = false;
             // 
@@ -566,9 +566,9 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(250, 158);
+            pictureBox1.Size = new Size(250, 204);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 38;
+            pictureBox1.TabIndex = 46;
             pictureBox1.TabStop = false;
             // 
             // FrmUsuarios
