@@ -19,5 +19,10 @@ namespace Heladeria
         {
 
         }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

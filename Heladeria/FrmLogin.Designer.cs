@@ -52,7 +52,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(90, 116);
+            pictureBox1.Location = new Point(97, 113);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(330, 220);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -238,6 +238,7 @@
             Name = "FrmLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Iniciar Sesión";
+            Load += FrmLogin_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
