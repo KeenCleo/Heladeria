@@ -24,5 +24,10 @@ namespace Heladeria
         {
 
         }
+
+        private void dgvUltimasVentas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
