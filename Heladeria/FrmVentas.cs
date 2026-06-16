@@ -14,5 +14,15 @@ namespace Heladeria
         {
             InitializeComponent();
         }
+
+        private void dgvUltimasVentas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

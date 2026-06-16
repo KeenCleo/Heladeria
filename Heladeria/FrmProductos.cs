@@ -29,5 +29,15 @@ namespace Heladeria
         {
 
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton12_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
