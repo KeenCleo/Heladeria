@@ -15,7 +15,7 @@ namespace Heladeria.DAL
             DataTable dt = new DataTable();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con.AbrirConexion();
-            cmd.CommandText = "SELECT ID_Producto, Nombre, Stock, Precio FROM Producto";
+            cmd.CommandText = "SELECT ID_Producto, Nombre_Producto, Stock, Precio_Base FROM Producto";
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
             con.CerrarConexion();
