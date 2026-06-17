@@ -14,5 +14,15 @@ namespace Heladeria
         {
             InitializeComponent();
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
