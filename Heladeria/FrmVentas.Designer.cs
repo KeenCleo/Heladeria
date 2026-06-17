@@ -29,235 +29,182 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmVentas));
-<<<<<<< HEAD
-            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
-=======
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
->>>>>>> ce9b5ccd2439b1443fae4ef1f2efd62b7f1f9616
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             panel1 = new Panel();
-            iconButton10 = new FontAwesome.Sharp.IconButton();
-            iconButton9 = new FontAwesome.Sharp.IconButton();
-            iconButton7 = new FontAwesome.Sharp.IconButton();
-            iconButton6 = new FontAwesome.Sharp.IconButton();
-            iconButton3 = new FontAwesome.Sharp.IconButton();
-            iconButton2 = new FontAwesome.Sharp.IconButton();
+            btn_IrUsuarios_frmPrincipal = new FontAwesome.Sharp.IconButton();
+            btn_IrInventario_frmPrincipal = new FontAwesome.Sharp.IconButton();
+            btn_IrCliente_frmPrincipal = new FontAwesome.Sharp.IconButton();
+            btn_irProducto_frmPrincipal = new FontAwesome.Sharp.IconButton();
+            btn_irVenta_frmPrincipal = new FontAwesome.Sharp.IconButton();
             iconButton1 = new FontAwesome.Sharp.IconButton();
             pictureBox1 = new PictureBox();
-            panel2 = new Panel();
-            groupBox2 = new GroupBox();
-            dgvUltimasVentas = new DataGridView();
+            btn_Salir_FrmPrincipal = new FontAwesome.Sharp.IconButton();
             groupBox1 = new GroupBox();
-<<<<<<< HEAD
-            btnGuardar = new FontAwesome.Sharp.IconButton();
-            btnBuscar = new FontAwesome.Sharp.IconButton();
-            cmbMetodoPago = new TextBox();
-            lblMetodoPago = new Label();
-            cmbCliente = new TextBox();
-            txtStock = new TextBox();
-            lblCliente = new Label();
-            lblProducto = new Label();
-            lblNumeroVenta = new Label();
-            colFactura = new DataGridViewTextBoxColumn();
-=======
-            iconButton5 = new FontAwesome.Sharp.IconButton();
-            iconButton12 = new FontAwesome.Sharp.IconButton();
-            textBox5 = new TextBox();
-            label4 = new Label();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
-            label2 = new Label();
+            groupBox2 = new GroupBox();
+            groupBox3 = new GroupBox();
+            groupBox4 = new GroupBox();
             label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            dateTimePicker1 = new DateTimePicker();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            comboBox1 = new ComboBox();
+            textBox4 = new TextBox();
+            textBox5 = new TextBox();
+            numericUpDown1 = new NumericUpDown();
+            iconButton5 = new FontAwesome.Sharp.IconButton();
+            iconButton4 = new FontAwesome.Sharp.IconButton();
+            label11 = new Label();
             label12 = new Label();
-            colMetodoDePago = new DataGridViewTextBoxColumn();
->>>>>>> ce9b5ccd2439b1443fae4ef1f2efd62b7f1f9616
+            label13 = new Label();
+            label14 = new Label();
+            label15 = new Label();
+            label16 = new Label();
+            dgvUltimasVentas = new DataGridView();
+            iconButton2 = new FontAwesome.Sharp.IconButton();
+            iconButton3 = new FontAwesome.Sharp.IconButton();
+            iconButton11 = new FontAwesome.Sharp.IconButton();
+            colFactura = new DataGridViewTextBoxColumn();
             colFecha = new DataGridViewTextBoxColumn();
             colCliente = new DataGridViewTextBoxColumn();
             colTotal = new DataGridViewTextBoxColumn();
             colUsuario = new DataGridViewTextBoxColumn();
-<<<<<<< HEAD
-            label3 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            panel3 = new Panel();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            lblStock = new Label();
-            lblPrecio = new Label();
-            txtPrecio = new TextBox();
-            label13 = new Label();
-            btnAgregar = new FontAwesome.Sharp.IconButton();
-            lblUsuario = new Label();
-            lblFecha = new Label();
-            textBox9 = new TextBox();
-            numericUpDown1 = new NumericUpDown();
-            cmbProducto = new ComboBox();
-            lblVenta = new Label();
-            dtpFecha = new DateTimePicker();
-            panel4 = new Panel();
-            btnAgregarVenta = new FontAwesome.Sharp.IconButton();
-            iconButton11 = new FontAwesome.Sharp.IconButton();
-            iconButton5 = new FontAwesome.Sharp.IconButton();
-=======
->>>>>>> ce9b5ccd2439b1443fae4ef1f2efd62b7f1f9616
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel2.SuspendLayout();
-            groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvUltimasVentas).BeginInit();
             groupBox1.SuspendLayout();
-            panel3.SuspendLayout();
+            groupBox2.SuspendLayout();
+            groupBox3.SuspendLayout();
+            groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
-            panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvUltimasVentas).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.Controls.Add(iconButton10);
-            panel1.Controls.Add(iconButton9);
-            panel1.Controls.Add(iconButton7);
-            panel1.Controls.Add(iconButton6);
-            panel1.Controls.Add(iconButton3);
-            panel1.Controls.Add(iconButton2);
+            panel1.Controls.Add(btn_Salir_FrmPrincipal);
+            panel1.Controls.Add(btn_IrUsuarios_frmPrincipal);
+            panel1.Controls.Add(btn_IrInventario_frmPrincipal);
+            panel1.Controls.Add(btn_IrCliente_frmPrincipal);
+            panel1.Controls.Add(btn_irProducto_frmPrincipal);
+            panel1.Controls.Add(btn_irVenta_frmPrincipal);
             panel1.Controls.Add(iconButton1);
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(4, 5, 4, 5);
             panel1.Name = "panel1";
-            panel1.Size = new Size(357, 1050);
+            panel1.Size = new Size(250, 729);
             panel1.TabIndex = 0;
             // 
-            // iconButton10
+            // btn_IrUsuarios_frmPrincipal
             // 
-            iconButton10.BackColor = Color.FromArgb(142, 197, 130);
-            iconButton10.Dock = DockStyle.Top;
-            iconButton10.FlatAppearance.MouseOverBackColor = Color.FromArgb(96, 133, 88);
-            iconButton10.FlatStyle = FlatStyle.Flat;
-            iconButton10.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            iconButton10.ForeColor = Color.White;
-            iconButton10.IconChar = FontAwesome.Sharp.IconChar.X;
-            iconButton10.IconColor = Color.Red;
-            iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton10.IconSize = 40;
-            iconButton10.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton10.Location = new Point(0, 1087);
-            iconButton10.Margin = new Padding(4, 5, 4, 5);
-            iconButton10.Name = "iconButton10";
-            iconButton10.Size = new Size(357, 125);
-            iconButton10.TabIndex = 53;
-            iconButton10.Text = "Salir";
-            iconButton10.UseVisualStyleBackColor = false;
+            btn_IrUsuarios_frmPrincipal.BackColor = Color.FromArgb(142, 197, 130);
+            btn_IrUsuarios_frmPrincipal.Dock = DockStyle.Top;
+            btn_IrUsuarios_frmPrincipal.FlatAppearance.MouseOverBackColor = Color.FromArgb(96, 133, 88);
+            btn_IrUsuarios_frmPrincipal.FlatStyle = FlatStyle.Flat;
+            btn_IrUsuarios_frmPrincipal.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
+            btn_IrUsuarios_frmPrincipal.ForeColor = Color.White;
+            btn_IrUsuarios_frmPrincipal.IconChar = FontAwesome.Sharp.IconChar.UserLarge;
+            btn_IrUsuarios_frmPrincipal.IconColor = Color.White;
+            btn_IrUsuarios_frmPrincipal.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_IrUsuarios_frmPrincipal.IconSize = 40;
+            btn_IrUsuarios_frmPrincipal.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_IrUsuarios_frmPrincipal.Location = new Point(0, 579);
+            btn_IrUsuarios_frmPrincipal.Name = "btn_IrUsuarios_frmPrincipal";
+            btn_IrUsuarios_frmPrincipal.Size = new Size(250, 75);
+            btn_IrUsuarios_frmPrincipal.TabIndex = 59;
+            btn_IrUsuarios_frmPrincipal.Text = "Usuarios";
+            btn_IrUsuarios_frmPrincipal.UseVisualStyleBackColor = false;
             // 
-            // iconButton9
+            // btn_IrInventario_frmPrincipal
             // 
-            iconButton9.BackColor = Color.FromArgb(142, 197, 130);
-            iconButton9.Dock = DockStyle.Top;
-            iconButton9.FlatAppearance.MouseOverBackColor = Color.FromArgb(96, 133, 88);
-            iconButton9.FlatStyle = FlatStyle.Flat;
-            iconButton9.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            iconButton9.ForeColor = Color.White;
-            iconButton9.IconChar = FontAwesome.Sharp.IconChar.UserLarge;
-            iconButton9.IconColor = Color.White;
-            iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton9.IconSize = 40;
-            iconButton9.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton9.Location = new Point(0, 962);
-            iconButton9.Margin = new Padding(4, 5, 4, 5);
-            iconButton9.Name = "iconButton9";
-            iconButton9.Size = new Size(357, 125);
-            iconButton9.TabIndex = 52;
-            iconButton9.Text = "Usuarios";
-            iconButton9.UseVisualStyleBackColor = false;
+            btn_IrInventario_frmPrincipal.BackColor = Color.FromArgb(142, 197, 130);
+            btn_IrInventario_frmPrincipal.Dock = DockStyle.Top;
+            btn_IrInventario_frmPrincipal.FlatAppearance.MouseOverBackColor = Color.FromArgb(96, 133, 88);
+            btn_IrInventario_frmPrincipal.FlatStyle = FlatStyle.Flat;
+            btn_IrInventario_frmPrincipal.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
+            btn_IrInventario_frmPrincipal.ForeColor = Color.White;
+            btn_IrInventario_frmPrincipal.IconChar = FontAwesome.Sharp.IconChar.Book;
+            btn_IrInventario_frmPrincipal.IconColor = Color.White;
+            btn_IrInventario_frmPrincipal.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_IrInventario_frmPrincipal.IconSize = 40;
+            btn_IrInventario_frmPrincipal.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_IrInventario_frmPrincipal.Location = new Point(0, 504);
+            btn_IrInventario_frmPrincipal.Name = "btn_IrInventario_frmPrincipal";
+            btn_IrInventario_frmPrincipal.Size = new Size(250, 75);
+            btn_IrInventario_frmPrincipal.TabIndex = 58;
+            btn_IrInventario_frmPrincipal.Text = "Inventario";
+            btn_IrInventario_frmPrincipal.UseVisualStyleBackColor = false;
             // 
-            // iconButton7
+            // btn_IrCliente_frmPrincipal
             // 
-            iconButton7.BackColor = Color.FromArgb(142, 197, 130);
-            iconButton7.Dock = DockStyle.Top;
-            iconButton7.FlatAppearance.MouseOverBackColor = Color.FromArgb(96, 133, 88);
-            iconButton7.FlatStyle = FlatStyle.Flat;
-            iconButton7.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            iconButton7.ForeColor = Color.White;
-            iconButton7.IconChar = FontAwesome.Sharp.IconChar.Book;
-            iconButton7.IconColor = Color.White;
-            iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton7.IconSize = 40;
-            iconButton7.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton7.Location = new Point(0, 837);
-            iconButton7.Margin = new Padding(4, 5, 4, 5);
-            iconButton7.Name = "iconButton7";
-            iconButton7.Size = new Size(357, 125);
-            iconButton7.TabIndex = 51;
-            iconButton7.Text = "Inventario";
-            iconButton7.UseVisualStyleBackColor = false;
+            btn_IrCliente_frmPrincipal.BackColor = Color.FromArgb(142, 197, 130);
+            btn_IrCliente_frmPrincipal.Dock = DockStyle.Top;
+            btn_IrCliente_frmPrincipal.FlatAppearance.MouseOverBackColor = Color.FromArgb(96, 133, 88);
+            btn_IrCliente_frmPrincipal.FlatStyle = FlatStyle.Flat;
+            btn_IrCliente_frmPrincipal.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
+            btn_IrCliente_frmPrincipal.ForeColor = Color.White;
+            btn_IrCliente_frmPrincipal.IconChar = FontAwesome.Sharp.IconChar.UserFriends;
+            btn_IrCliente_frmPrincipal.IconColor = Color.White;
+            btn_IrCliente_frmPrincipal.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_IrCliente_frmPrincipal.IconSize = 40;
+            btn_IrCliente_frmPrincipal.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_IrCliente_frmPrincipal.Location = new Point(0, 429);
+            btn_IrCliente_frmPrincipal.Name = "btn_IrCliente_frmPrincipal";
+            btn_IrCliente_frmPrincipal.Size = new Size(250, 75);
+            btn_IrCliente_frmPrincipal.TabIndex = 57;
+            btn_IrCliente_frmPrincipal.Text = "Clientes";
+            btn_IrCliente_frmPrincipal.UseVisualStyleBackColor = false;
             // 
-            // iconButton6
+            // btn_irProducto_frmPrincipal
             // 
-            iconButton6.BackColor = Color.FromArgb(142, 197, 130);
-            iconButton6.Dock = DockStyle.Top;
-            iconButton6.FlatAppearance.MouseOverBackColor = Color.FromArgb(96, 133, 88);
-            iconButton6.FlatStyle = FlatStyle.Flat;
-            iconButton6.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            iconButton6.ForeColor = Color.White;
-            iconButton6.IconChar = FontAwesome.Sharp.IconChar.UserFriends;
-            iconButton6.IconColor = Color.White;
-            iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton6.IconSize = 40;
-            iconButton6.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton6.Location = new Point(0, 712);
-            iconButton6.Margin = new Padding(4, 5, 4, 5);
-            iconButton6.Name = "iconButton6";
-            iconButton6.Size = new Size(357, 125);
-            iconButton6.TabIndex = 50;
-            iconButton6.Text = "Clientes";
-            iconButton6.UseVisualStyleBackColor = false;
+            btn_irProducto_frmPrincipal.BackColor = Color.FromArgb(142, 197, 130);
+            btn_irProducto_frmPrincipal.Dock = DockStyle.Top;
+            btn_irProducto_frmPrincipal.FlatAppearance.MouseOverBackColor = Color.FromArgb(96, 133, 88);
+            btn_irProducto_frmPrincipal.FlatStyle = FlatStyle.Flat;
+            btn_irProducto_frmPrincipal.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
+            btn_irProducto_frmPrincipal.ForeColor = Color.White;
+            btn_irProducto_frmPrincipal.IconChar = FontAwesome.Sharp.IconChar.Coins;
+            btn_irProducto_frmPrincipal.IconColor = Color.White;
+            btn_irProducto_frmPrincipal.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_irProducto_frmPrincipal.IconSize = 40;
+            btn_irProducto_frmPrincipal.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_irProducto_frmPrincipal.Location = new Point(0, 354);
+            btn_irProducto_frmPrincipal.Name = "btn_irProducto_frmPrincipal";
+            btn_irProducto_frmPrincipal.Size = new Size(250, 75);
+            btn_irProducto_frmPrincipal.TabIndex = 56;
+            btn_irProducto_frmPrincipal.Text = "Productos";
+            btn_irProducto_frmPrincipal.UseVisualStyleBackColor = false;
             // 
-            // iconButton3
+            // btn_irVenta_frmPrincipal
             // 
-            iconButton3.BackColor = Color.FromArgb(142, 197, 130);
-            iconButton3.Dock = DockStyle.Top;
-            iconButton3.FlatAppearance.MouseOverBackColor = Color.FromArgb(96, 133, 88);
-            iconButton3.FlatStyle = FlatStyle.Flat;
-            iconButton3.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            iconButton3.ForeColor = Color.White;
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.Coins;
-            iconButton3.IconColor = Color.White;
-            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.IconSize = 40;
-            iconButton3.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton3.Location = new Point(0, 587);
-            iconButton3.Margin = new Padding(4, 5, 4, 5);
-            iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(357, 125);
-            iconButton3.TabIndex = 49;
-            iconButton3.Text = "Productos";
-            iconButton3.UseVisualStyleBackColor = false;
-            // 
-            // iconButton2
-            // 
-            iconButton2.BackColor = Color.FromArgb(142, 197, 130);
-            iconButton2.Dock = DockStyle.Top;
-            iconButton2.FlatAppearance.MouseOverBackColor = Color.FromArgb(96, 133, 88);
-            iconButton2.FlatStyle = FlatStyle.Flat;
-            iconButton2.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            iconButton2.ForeColor = Color.White;
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.CartShopping;
-            iconButton2.IconColor = Color.White;
-            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.IconSize = 40;
-            iconButton2.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton2.Location = new Point(0, 462);
-            iconButton2.Margin = new Padding(4, 5, 4, 5);
-            iconButton2.Name = "iconButton2";
-            iconButton2.Size = new Size(357, 125);
-            iconButton2.TabIndex = 48;
-            iconButton2.Text = "Ventas";
-            iconButton2.UseVisualStyleBackColor = false;
+            btn_irVenta_frmPrincipal.BackColor = Color.FromArgb(142, 197, 130);
+            btn_irVenta_frmPrincipal.Dock = DockStyle.Top;
+            btn_irVenta_frmPrincipal.FlatAppearance.MouseOverBackColor = Color.FromArgb(96, 133, 88);
+            btn_irVenta_frmPrincipal.FlatStyle = FlatStyle.Flat;
+            btn_irVenta_frmPrincipal.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
+            btn_irVenta_frmPrincipal.ForeColor = Color.White;
+            btn_irVenta_frmPrincipal.IconChar = FontAwesome.Sharp.IconChar.CartShopping;
+            btn_irVenta_frmPrincipal.IconColor = Color.White;
+            btn_irVenta_frmPrincipal.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_irVenta_frmPrincipal.IconSize = 40;
+            btn_irVenta_frmPrincipal.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_irVenta_frmPrincipal.Location = new Point(0, 279);
+            btn_irVenta_frmPrincipal.Name = "btn_irVenta_frmPrincipal";
+            btn_irVenta_frmPrincipal.Size = new Size(250, 75);
+            btn_irVenta_frmPrincipal.TabIndex = 55;
+            btn_irVenta_frmPrincipal.Text = "Ventas";
+            btn_irVenta_frmPrincipal.UseVisualStyleBackColor = false;
             // 
             // iconButton1
             // 
@@ -272,11 +219,10 @@
             iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton1.IconSize = 40;
             iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton1.Location = new Point(0, 337);
-            iconButton1.Margin = new Padding(4, 5, 4, 5);
+            iconButton1.Location = new Point(0, 204);
             iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(357, 125);
-            iconButton1.TabIndex = 47;
+            iconButton1.Size = new Size(250, 75);
+            iconButton1.TabIndex = 54;
             iconButton1.Text = "Inicio";
             iconButton1.UseVisualStyleBackColor = false;
             // 
@@ -289,314 +235,249 @@
             pictureBox1.Enabled = false;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(357, 337);
+            pictureBox1.Size = new Size(250, 204);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 46;
+            pictureBox1.TabIndex = 53;
             pictureBox1.TabStop = false;
             // 
-            // panel2
+            // btn_Salir_FrmPrincipal
             // 
-            panel2.BackColor = Color.FromArgb(253, 253, 253);
-            panel2.Controls.Add(groupBox2);
-            panel2.Controls.Add(groupBox1);
-            panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(357, 0);
-            panel2.Margin = new Padding(4, 5, 4, 5);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1567, 1050);
-            panel2.TabIndex = 1;
+            btn_Salir_FrmPrincipal.BackColor = Color.FromArgb(142, 197, 130);
+            btn_Salir_FrmPrincipal.Dock = DockStyle.Top;
+            btn_Salir_FrmPrincipal.FlatAppearance.MouseOverBackColor = Color.FromArgb(96, 133, 88);
+            btn_Salir_FrmPrincipal.FlatStyle = FlatStyle.Flat;
+            btn_Salir_FrmPrincipal.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
+            btn_Salir_FrmPrincipal.ForeColor = Color.White;
+            btn_Salir_FrmPrincipal.IconChar = FontAwesome.Sharp.IconChar.X;
+            btn_Salir_FrmPrincipal.IconColor = Color.Red;
+            btn_Salir_FrmPrincipal.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_Salir_FrmPrincipal.IconSize = 40;
+            btn_Salir_FrmPrincipal.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_Salir_FrmPrincipal.Location = new Point(0, 654);
+            btn_Salir_FrmPrincipal.Name = "btn_Salir_FrmPrincipal";
+            btn_Salir_FrmPrincipal.Size = new Size(250, 75);
+            btn_Salir_FrmPrincipal.TabIndex = 60;
+            btn_Salir_FrmPrincipal.Text = "Salir";
+            btn_Salir_FrmPrincipal.UseVisualStyleBackColor = false;
             // 
-<<<<<<< HEAD
-=======
-            // panel3
+            // groupBox1
             // 
-            panel3.Controls.Add(label3);
-            panel3.Controls.Add(label5);
-            panel3.Location = new Point(9, 943);
-            panel3.Margin = new Padding(4, 5, 4, 5);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(1546, 142);
-            panel3.TabIndex = 32;
+            groupBox1.Controls.Add(textBox3);
+            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(dateTimePicker1);
+            groupBox1.Controls.Add(label6);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            groupBox1.Location = new Point(261, 10);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(1077, 159);
+            groupBox1.TabIndex = 1;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Información de la Venta";
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(iconButton5);
+            groupBox2.Controls.Add(iconButton4);
+            groupBox2.Controls.Add(numericUpDown1);
+            groupBox2.Controls.Add(textBox5);
+            groupBox2.Controls.Add(textBox4);
+            groupBox2.Controls.Add(comboBox1);
+            groupBox2.Controls.Add(label10);
+            groupBox2.Controls.Add(label9);
+            groupBox2.Controls.Add(label8);
+            groupBox2.Controls.Add(label7);
+            groupBox2.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            groupBox2.Location = new Point(261, 175);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(1077, 104);
+            groupBox2.TabIndex = 2;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Agregar Producto";
+            // 
+            // groupBox3
+            // 
+            groupBox3.Controls.Add(dgvUltimasVentas);
+            groupBox3.Controls.Add(label16);
+            groupBox3.Controls.Add(label15);
+            groupBox3.Controls.Add(label14);
+            groupBox3.Controls.Add(label13);
+            groupBox3.Controls.Add(label12);
+            groupBox3.Controls.Add(label11);
+            groupBox3.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            groupBox3.Location = new Point(261, 285);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(1077, 346);
+            groupBox3.TabIndex = 2;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Detalle de la Venta";
+            // 
+            // groupBox4
+            // 
+            groupBox4.Controls.Add(iconButton11);
+            groupBox4.Controls.Add(iconButton2);
+            groupBox4.Controls.Add(iconButton3);
+            groupBox4.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            groupBox4.Location = new Point(261, 637);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(1077, 80);
+            groupBox4.TabIndex = 2;
+            groupBox4.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(6, 23);
+            label1.Name = "label1";
+            label1.Size = new Size(102, 20);
+            label1.TabIndex = 0;
+            label1.Text = "N de Factura:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(138, 23);
+            label2.Name = "label2";
+            label2.Size = new Size(53, 20);
+            label2.TabIndex = 1;
+            label2.Text = "Fecha:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label3.ForeColor = Color.RoyalBlue;
-            label3.Location = new Point(700, 57);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(332, 23);
             label3.Name = "label3";
-            label3.Size = new Size(209, 48);
-            label3.TabIndex = 9;
-            label3.Text = "C$1,200.00";
+            label3.Size = new Size(61, 20);
+            label3.TabIndex = 2;
+            label3.Text = "Cliente:";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(538, 23);
+            label4.Name = "label4";
+            label4.Size = new Size(128, 20);
+            label4.TabIndex = 3;
+            label4.Text = "Metodo de Pago:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label5.Location = new Point(659, 22);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Location = new Point(6, 78);
             label5.Name = "label5";
-            label5.Size = new Size(297, 32);
-            label5.TabIndex = 8;
-            label5.Text = "Total Ventas del Periodo:";
+            label5.Size = new Size(81, 20);
+            label5.TabIndex = 4;
+            label5.Text = "Vendedor:";
             // 
->>>>>>> ce9b5ccd2439b1443fae4ef1f2efd62b7f1f9616
-            // groupBox2
+            // label6
             // 
-            groupBox2.Controls.Add(panel4);
-            groupBox2.Controls.Add(panel3);
-            groupBox2.Controls.Add(dgvUltimasVentas);
-            groupBox2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            groupBox2.Location = new Point(9, 510);
-            groupBox2.Margin = new Padding(4, 5, 4, 5);
-            groupBox2.Name = "groupBox2";
-<<<<<<< HEAD
-            groupBox2.Size = new Size(1082, 411);
-=======
-            groupBox2.Padding = new Padding(4, 5, 4, 5);
-            groupBox2.Size = new Size(1546, 425);
->>>>>>> ce9b5ccd2439b1443fae4ef1f2efd62b7f1f9616
-            groupBox2.TabIndex = 31;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Detalle de Venta";
-            groupBox2.Enter += groupBox2_Enter;
+            label6.AutoSize = true;
+            label6.Location = new Point(6, 43);
+            label6.Name = "label6";
+            label6.Size = new Size(54, 20);
+            label6.TabIndex = 5;
+            label6.Text = "00001";
             // 
-            // dgvUltimasVentas
+            // dateTimePicker1
             // 
-            dgvUltimasVentas.AllowUserToAddRows = false;
-            dgvUltimasVentas.AllowUserToDeleteRows = false;
-<<<<<<< HEAD
-            dataGridViewCellStyle7.BackColor = Color.FromArgb(255, 248, 240);
-            dgvUltimasVentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dgvUltimasVentas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvUltimasVentas.BackgroundColor = Color.White;
-            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = Color.FromArgb(65, 36, 2);
-            dataGridViewCellStyle8.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            dataGridViewCellStyle8.ForeColor = Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.True;
-            dgvUltimasVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            dgvUltimasVentas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUltimasVentas.Columns.AddRange(new DataGridViewColumn[] { colFactura, colFecha, colCliente, colTotal, colUsuario });
-            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = Color.FromArgb(250, 238, 218);
-            dataGridViewCellStyle9.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            dataGridViewCellStyle9.ForeColor = Color.FromArgb(65, 36, 2);
-            dataGridViewCellStyle9.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.False;
-            dgvUltimasVentas.DefaultCellStyle = dataGridViewCellStyle9;
-            dgvUltimasVentas.Location = new Point(14, 28);
-=======
-            dataGridViewCellStyle4.BackColor = Color.FromArgb(255, 248, 240);
-            dgvUltimasVentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dgvUltimasVentas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvUltimasVentas.BackgroundColor = Color.White;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = Color.FromArgb(65, 36, 2);
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
-            dgvUltimasVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            dgvUltimasVentas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUltimasVentas.Columns.AddRange(new DataGridViewColumn[] { colMetodoDePago, colFecha, colCliente, colTotal, colUsuario });
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = Color.FromArgb(250, 238, 218);
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = Color.FromArgb(65, 36, 2);
-            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
-            dgvUltimasVentas.DefaultCellStyle = dataGridViewCellStyle6;
-            dgvUltimasVentas.Location = new Point(20, 47);
-            dgvUltimasVentas.Margin = new Padding(4, 5, 4, 5);
->>>>>>> ce9b5ccd2439b1443fae4ef1f2efd62b7f1f9616
-            dgvUltimasVentas.Name = "dgvUltimasVentas";
-            dgvUltimasVentas.ReadOnly = true;
-            dgvUltimasVentas.RowHeadersVisible = false;
-            dgvUltimasVentas.RowHeadersWidth = 51;
-            dgvUltimasVentas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-<<<<<<< HEAD
-            dgvUltimasVentas.Size = new Size(811, 282);
-=======
-            dgvUltimasVentas.Size = new Size(1517, 352);
->>>>>>> ce9b5ccd2439b1443fae4ef1f2efd62b7f1f9616
-            dgvUltimasVentas.TabIndex = 28;
-            dgvUltimasVentas.CellContentClick += dgvUltimasVentas_CellContentClick;
+            dateTimePicker1.Location = new Point(138, 46);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(191, 27);
+            dateTimePicker1.TabIndex = 6;
             // 
-            // groupBox1
-<<<<<<< HEAD
+            // textBox1
             // 
-            groupBox1.Controls.Add(dtpFecha);
-            groupBox1.Controls.Add(lblVenta);
-            groupBox1.Controls.Add(cmbProducto);
-            groupBox1.Controls.Add(numericUpDown1);
-            groupBox1.Controls.Add(textBox9);
-            groupBox1.Controls.Add(lblFecha);
-            groupBox1.Controls.Add(lblUsuario);
-            groupBox1.Controls.Add(btnAgregar);
-            groupBox1.Controls.Add(label13);
-            groupBox1.Controls.Add(lblPrecio);
-            groupBox1.Controls.Add(txtPrecio);
-            groupBox1.Controls.Add(lblStock);
-            groupBox1.Controls.Add(btnGuardar);
-            groupBox1.Controls.Add(btnBuscar);
-            groupBox1.Controls.Add(cmbMetodoPago);
-            groupBox1.Controls.Add(lblMetodoPago);
-            groupBox1.Controls.Add(cmbCliente);
-            groupBox1.Controls.Add(txtStock);
-            groupBox1.Controls.Add(lblCliente);
-            groupBox1.Controls.Add(lblProducto);
-            groupBox1.Controls.Add(lblNumeroVenta);
-            groupBox1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            groupBox1.Location = new Point(6, 12);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1082, 288);
-            groupBox1.TabIndex = 1;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Filtros";
+            textBox1.Location = new Point(332, 48);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(200, 27);
+            textBox1.TabIndex = 7;
             // 
-            // btnGuardar
+            // textBox2
             // 
-            btnGuardar.BackColor = Color.FromArgb(31, 107, 199);
-            btnGuardar.FlatStyle = FlatStyle.Flat;
-            btnGuardar.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnGuardar.ForeColor = Color.White;
-            btnGuardar.IconChar = FontAwesome.Sharp.IconChar.Save;
-            btnGuardar.IconColor = Color.White;
-            btnGuardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnGuardar.IconSize = 30;
-            btnGuardar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnGuardar.Location = new Point(776, 196);
-            btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(125, 50);
-            btnGuardar.TabIndex = 25;
-            btnGuardar.Text = "Guardar";
-            btnGuardar.UseVisualStyleBackColor = false;
+            textBox2.Location = new Point(538, 48);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(238, 27);
+            textBox2.TabIndex = 8;
             // 
-            // btnBuscar
+            // textBox3
             // 
-            btnBuscar.BackColor = Color.Gray;
-            btnBuscar.FlatStyle = FlatStyle.Flat;
-            btnBuscar.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnBuscar.ForeColor = Color.White;
-            btnBuscar.IconChar = FontAwesome.Sharp.IconChar.Search;
-            btnBuscar.IconColor = Color.White;
-            btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnBuscar.IconSize = 30;
-            btnBuscar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnBuscar.Location = new Point(907, 195);
-            btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(125, 50);
-            btnBuscar.TabIndex = 27;
-            btnBuscar.Text = "Buscar";
-            btnBuscar.UseVisualStyleBackColor = false;
+            textBox3.Location = new Point(6, 101);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(238, 27);
+            textBox3.TabIndex = 9;
             // 
-            // cmbMetodoPago
+            // label7
             // 
-            cmbMetodoPago.Font = new Font("Segoe UI Light", 12F);
-            cmbMetodoPago.Location = new Point(684, 55);
-            cmbMetodoPago.Name = "cmbMetodoPago";
-            cmbMetodoPago.Size = new Size(295, 29);
-            cmbMetodoPago.TabIndex = 22;
+            label7.AutoSize = true;
+            label7.Location = new Point(10, 29);
+            label7.Name = "label7";
+            label7.Size = new Size(77, 20);
+            label7.TabIndex = 10;
+            label7.Text = "Producto:";
             // 
-            // lblMetodoPago
+            // label8
             // 
-            lblMetodoPago.AutoSize = true;
-            lblMetodoPago.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            lblMetodoPago.Location = new Point(684, 31);
-            lblMetodoPago.Name = "lblMetodoPago";
-            lblMetodoPago.Size = new Size(140, 21);
-            lblMetodoPago.TabIndex = 20;
-            lblMetodoPago.Text = "Metodo de Pago:";
+            label8.AutoSize = true;
+            label8.Location = new Point(167, 29);
+            label8.Name = "label8";
+            label8.Size = new Size(52, 20);
+            label8.TabIndex = 11;
+            label8.Text = "Stock:";
             // 
-            // cmbCliente
+            // label9
             // 
-            cmbCliente.Font = new Font("Segoe UI Light", 12F);
-            cmbCliente.Location = new Point(474, 55);
-            cmbCliente.Name = "cmbCliente";
-            cmbCliente.PlaceholderText = "Ingrese nombre del cliente...";
-            cmbCliente.Size = new Size(204, 29);
-            cmbCliente.TabIndex = 19;
+            label9.AutoSize = true;
+            label9.Location = new Point(306, 29);
+            label9.Name = "label9";
+            label9.Size = new Size(117, 20);
+            label9.TabIndex = 12;
+            label9.Text = "Precio Unitario:";
             // 
-            // txtStock
+            // label10
             // 
-            txtStock.Font = new Font("Segoe UI Light", 12F);
-            txtStock.Location = new Point(247, 218);
-            txtStock.Name = "txtStock";
-            txtStock.ReadOnly = true;
-            txtStock.ShortcutsEnabled = false;
-            txtStock.Size = new Size(107, 29);
-            txtStock.TabIndex = 17;
+            label10.AutoSize = true;
+            label10.Location = new Point(458, 29);
+            label10.Name = "label10";
+            label10.Size = new Size(75, 20);
+            label10.TabIndex = 13;
+            label10.Text = "Cantidad:";
             // 
-            // lblCliente
+            // comboBox1
             // 
-            lblCliente.AutoSize = true;
-            lblCliente.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            lblCliente.Location = new Point(474, 31);
-            lblCliente.Name = "lblCliente";
-            lblCliente.Size = new Size(68, 21);
-            lblCliente.TabIndex = 16;
-            lblCliente.Text = "Cliente:";
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(10, 54);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(157, 28);
+            comboBox1.TabIndex = 14;
             // 
-            // lblProducto
+            // textBox4
             // 
-            lblProducto.AutoSize = true;
-            lblProducto.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            lblProducto.Location = new Point(14, 192);
-            lblProducto.Name = "lblProducto";
-            lblProducto.Size = new Size(84, 21);
-            lblProducto.TabIndex = 15;
-            lblProducto.Text = "Producto:";
+            textBox4.Location = new Point(173, 55);
+            textBox4.Name = "textBox4";
+            textBox4.ReadOnly = true;
+            textBox4.Size = new Size(127, 27);
+            textBox4.TabIndex = 10;
             // 
-            // lblNumeroVenta
+            // textBox5
             // 
-            lblNumeroVenta.AutoSize = true;
-            lblNumeroVenta.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            lblNumeroVenta.Location = new Point(14, 31);
-            lblNumeroVenta.Name = "lblNumeroVenta";
-            lblNumeroVenta.Size = new Size(126, 21);
-            lblNumeroVenta.TabIndex = 14;
-            lblNumeroVenta.Text = "N de la factura:";
+            textBox5.Location = new Point(306, 56);
+            textBox5.Name = "textBox5";
+            textBox5.ReadOnly = true;
+            textBox5.Size = new Size(146, 27);
+            textBox5.TabIndex = 15;
             // 
-            // colFactura
+            // numericUpDown1
             // 
-            colFactura.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            colFactura.FillWeight = 203.045685F;
-            colFactura.HeaderText = "Factura";
-            colFactura.MinimumWidth = 6;
-            colFactura.Name = "colFactura";
-            colFactura.ReadOnly = true;
-            colFactura.Width = 150;
-=======
-            // 
-            groupBox1.Controls.Add(iconButton5);
-            groupBox1.Controls.Add(iconButton12);
-            groupBox1.Controls.Add(textBox5);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(textBox1);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(label12);
-            groupBox1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            groupBox1.Location = new Point(9, 20);
-            groupBox1.Margin = new Padding(4, 5, 4, 5);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(4, 5, 4, 5);
-            groupBox1.Size = new Size(1546, 480);
-            groupBox1.TabIndex = 1;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Filtros";
-            groupBox1.Enter += groupBox1_Enter;
+            numericUpDown1.Location = new Point(458, 57);
+            numericUpDown1.Name = "numericUpDown1";
+            numericUpDown1.Size = new Size(120, 27);
+            numericUpDown1.TabIndex = 16;
             // 
             // iconButton5
             // 
@@ -609,398 +490,167 @@
             iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton5.IconSize = 30;
             iconButton5.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton5.Location = new Point(20, 342);
-            iconButton5.Margin = new Padding(4, 5, 4, 5);
+            iconButton5.Location = new Point(735, 32);
             iconButton5.Name = "iconButton5";
-            iconButton5.Size = new Size(179, 83);
-            iconButton5.TabIndex = 25;
+            iconButton5.Size = new Size(125, 50);
+            iconButton5.TabIndex = 33;
             iconButton5.Text = "Guardar";
             iconButton5.UseVisualStyleBackColor = false;
             // 
-            // iconButton12
+            // iconButton4
             // 
-            iconButton12.BackColor = Color.Gray;
-            iconButton12.FlatStyle = FlatStyle.Flat;
-            iconButton12.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            iconButton12.ForeColor = Color.White;
-            iconButton12.IconChar = FontAwesome.Sharp.IconChar.Search;
-            iconButton12.IconColor = Color.White;
-            iconButton12.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton12.IconSize = 30;
-            iconButton12.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton12.Location = new Point(207, 342);
-            iconButton12.Margin = new Padding(4, 5, 4, 5);
-            iconButton12.Name = "iconButton12";
-            iconButton12.Size = new Size(179, 83);
-            iconButton12.TabIndex = 27;
-            iconButton12.Text = "Buscar";
-            iconButton12.UseVisualStyleBackColor = false;
+            iconButton4.BackColor = Color.FromArgb(48, 161, 73);
+            iconButton4.FlatStyle = FlatStyle.Flat;
+            iconButton4.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            iconButton4.ForeColor = Color.White;
+            iconButton4.IconChar = FontAwesome.Sharp.IconChar.Add;
+            iconButton4.IconColor = Color.White;
+            iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton4.IconSize = 30;
+            iconButton4.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton4.Location = new Point(604, 32);
+            iconButton4.Name = "iconButton4";
+            iconButton4.Size = new Size(125, 50);
+            iconButton4.TabIndex = 32;
+            iconButton4.Text = "Agregar";
+            iconButton4.UseVisualStyleBackColor = false;
             // 
-            // textBox5
+            // label11
             // 
-            textBox5.Font = new Font("Segoe UI Light", 12F);
-            textBox5.Location = new Point(174, 270);
-            textBox5.Margin = new Padding(4, 5, 4, 5);
-            textBox5.Name = "textBox5";
-            textBox5.PlaceholderText = "Buscar factura...";
-            textBox5.Size = new Size(420, 39);
-            textBox5.TabIndex = 22;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label4.Location = new Point(14, 275);
-            label4.Margin = new Padding(4, 0, 4, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(104, 32);
-            label4.TabIndex = 20;
-            label4.Text = "Factura:";
-            // 
-            // textBox3
-            // 
-            textBox3.Font = new Font("Segoe UI Light", 12F);
-            textBox3.Location = new Point(174, 195);
-            textBox3.Margin = new Padding(4, 5, 4, 5);
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "Ingrese nombre del cliente...";
-            textBox3.Size = new Size(420, 39);
-            textBox3.TabIndex = 19;
-            // 
-            // textBox2
-            // 
-            textBox2.Font = new Font("Segoe UI Light", 12F);
-            textBox2.Location = new Point(174, 123);
-            textBox2.Margin = new Padding(4, 5, 4, 5);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "Ingre fecha final...";
-            textBox2.Size = new Size(311, 39);
-            textBox2.TabIndex = 18;
-            // 
-            // textBox1
-            // 
-            textBox1.Font = new Font("Segoe UI Light", 12F);
-            textBox1.Location = new Point(174, 47);
-            textBox1.Margin = new Padding(4, 5, 4, 5);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Ingre fecha incial...";
-            textBox1.Size = new Size(311, 39);
-            textBox1.TabIndex = 17;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label2.Location = new Point(14, 200);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(100, 32);
-            label2.TabIndex = 16;
-            label2.Text = "Cliente:";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label1.Location = new Point(14, 128);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(126, 32);
-            label1.TabIndex = 15;
-            label1.Text = "Fecha Fin:";
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label11.Location = new Point(881, 25);
+            label11.Name = "label11";
+            label11.Size = new Size(93, 25);
+            label11.TabIndex = 10;
+            label11.Text = "Subtotal:";
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label12.Location = new Point(16, 52);
-            label12.Margin = new Padding(4, 0, 4, 0);
+            label12.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label12.Location = new Point(881, 48);
             label12.Name = "label12";
-            label12.Size = new Size(156, 32);
-            label12.TabIndex = 14;
-            label12.Text = "Fecha Inicio:";
-            // 
-            // colMetodoDePago
-            // 
-            colMetodoDePago.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            colMetodoDePago.FillWeight = 203.045685F;
-            colMetodoDePago.HeaderText = "Metodo de Pago";
-            colMetodoDePago.MinimumWidth = 6;
-            colMetodoDePago.Name = "colMetodoDePago";
-            colMetodoDePago.ReadOnly = true;
-            colMetodoDePago.Width = 250;
->>>>>>> ce9b5ccd2439b1443fae4ef1f2efd62b7f1f9616
-            // 
-            // colFecha
-            // 
-            colFecha.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            colFecha.FillWeight = 103.325485F;
-            colFecha.HeaderText = "Fecha";
-            colFecha.MinimumWidth = 6;
-            colFecha.Name = "colFecha";
-            colFecha.ReadOnly = true;
-            colFecha.Width = 150;
-            // 
-            // colCliente
-            // 
-            colCliente.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            colCliente.FillWeight = 167.295044F;
-            colCliente.HeaderText = "Cliente";
-            colCliente.MinimumWidth = 6;
-            colCliente.Name = "colCliente";
-            colCliente.ReadOnly = true;
-<<<<<<< HEAD
-            colCliente.Width = 150;
-=======
-            colCliente.Width = 500;
->>>>>>> ce9b5ccd2439b1443fae4ef1f2efd62b7f1f9616
-            // 
-            // colTotal
-            // 
-            colTotal.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
-            colTotal.FillWeight = 18.00486F;
-            colTotal.HeaderText = "Total";
-            colTotal.MinimumWidth = 6;
-            colTotal.Name = "colTotal";
-            colTotal.ReadOnly = true;
-            colTotal.Resizable = DataGridViewTriState.True;
-            colTotal.Width = 106;
-            // 
-            // colUsuario
-            // 
-            colUsuario.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            colUsuario.FillWeight = 8.328922F;
-            colUsuario.HeaderText = "Usuario";
-            colUsuario.MinimumWidth = 6;
-            colUsuario.Name = "colUsuario";
-            colUsuario.ReadOnly = true;
-<<<<<<< HEAD
-            colUsuario.Width = 150;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            label3.Location = new Point(5, 8);
-            label3.Name = "label3";
-            label3.Size = new Size(97, 28);
-            label3.TabIndex = 28;
-            label3.Text = "Subtotal:";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            label5.Location = new Point(5, 36);
-            label5.Name = "label5";
-            label5.Size = new Size(117, 28);
-            label5.TabIndex = 29;
-            label5.Text = "Descuento:";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.White;
-            label6.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            label6.ForeColor = Color.Blue;
-            label6.Location = new Point(123, 78);
-            label6.Name = "label6";
-            label6.Size = new Size(105, 37);
-            label6.TabIndex = 30;
-            label6.Text = "C$ 350";
-            // 
-            // panel3
-            // 
-            panel3.Controls.Add(label9);
-            panel3.Controls.Add(label8);
-            panel3.Controls.Add(label7);
-            panel3.Controls.Add(label6);
-            panel3.Controls.Add(label5);
-            panel3.Controls.Add(label3);
-            panel3.Location = new Point(831, 28);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(245, 128);
-            panel3.TabIndex = 31;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.White;
-            label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label7.ForeColor = Color.Green;
-            label7.Location = new Point(136, 38);
-            label7.Name = "label7";
-            label7.Size = new Size(92, 32);
-            label7.TabIndex = 31;
-            label7.Text = "C$ 350";
-            label7.Click += label7_Click;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.White;
-            label8.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label8.ForeColor = Color.Green;
-            label8.Location = new Point(136, 8);
-            label8.Name = "label8";
-            label8.Size = new Size(92, 32);
-            label8.TabIndex = 32;
-            label8.Text = "C$ 350";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            label9.Location = new Point(5, 78);
-            label9.Name = "label9";
-            label9.Size = new Size(89, 37);
-            label9.TabIndex = 33;
-            label9.Text = "Total:";
-            // 
-            // lblStock
-            // 
-            lblStock.AutoSize = true;
-            lblStock.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            lblStock.Location = new Point(247, 192);
-            lblStock.Name = "lblStock";
-            lblStock.Size = new Size(57, 21);
-            lblStock.TabIndex = 28;
-            lblStock.Text = "Stock:";
-            // 
-            // lblPrecio
-            // 
-            lblPrecio.AutoSize = true;
-            lblPrecio.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            lblPrecio.Location = new Point(360, 194);
-            lblPrecio.Name = "lblPrecio";
-            lblPrecio.Size = new Size(129, 21);
-            lblPrecio.TabIndex = 30;
-            lblPrecio.Text = "Precio Unitario:";
-            // 
-            // txtPrecio
-            // 
-            txtPrecio.Font = new Font("Segoe UI Light", 12F);
-            txtPrecio.Location = new Point(360, 218);
-            txtPrecio.Name = "txtPrecio";
-            txtPrecio.ReadOnly = true;
-            txtPrecio.Size = new Size(153, 29);
-            txtPrecio.TabIndex = 29;
+            label12.Size = new Size(111, 25);
+            label12.TabIndex = 11;
+            label12.Text = "Descuento:";
             // 
             // label13
             // 
             label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label13.Location = new Point(519, 192);
+            label13.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            label13.Location = new Point(881, 73);
             label13.Name = "label13";
-            label13.Size = new Size(83, 21);
-            label13.TabIndex = 32;
-            label13.Text = "Cantidad:";
+            label13.Size = new Size(77, 32);
+            label13.TabIndex = 12;
+            label13.Text = "Total:";
             // 
-            // btnAgregar
+            // label14
             // 
-            btnAgregar.BackColor = Color.FromArgb(48, 161, 73);
-            btnAgregar.FlatStyle = FlatStyle.Flat;
-            btnAgregar.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnAgregar.ForeColor = Color.White;
-            btnAgregar.IconChar = FontAwesome.Sharp.IconChar.Add;
-            btnAgregar.IconColor = Color.White;
-            btnAgregar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnAgregar.IconSize = 30;
-            btnAgregar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAgregar.Location = new Point(645, 198);
-            btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(125, 50);
-            btnAgregar.TabIndex = 33;
-            btnAgregar.Text = "Agregar";
-            btnAgregar.UseVisualStyleBackColor = false;
+            label14.AutoSize = true;
+            label14.BackColor = Color.FromArgb(253, 253, 253);
+            label14.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label14.ForeColor = Color.FromArgb(0, 192, 0);
+            label14.Location = new Point(998, 25);
+            label14.Name = "label14";
+            label14.Size = new Size(73, 25);
+            label14.TabIndex = 13;
+            label14.Text = "C$ 350";
             // 
-            // lblUsuario
+            // label15
             // 
-            lblUsuario.AutoSize = true;
-            lblUsuario.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            lblUsuario.Location = new Point(14, 87);
-            lblUsuario.Name = "lblUsuario";
-            lblUsuario.Size = new Size(89, 21);
-            lblUsuario.TabIndex = 35;
-            lblUsuario.Text = "Vendedor:";
+            label15.AutoSize = true;
+            label15.BackColor = Color.FromArgb(253, 253, 253);
+            label15.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label15.ForeColor = Color.FromArgb(0, 192, 0);
+            label15.Location = new Point(998, 48);
+            label15.Name = "label15";
+            label15.Size = new Size(73, 25);
+            label15.TabIndex = 14;
+            label15.Text = "C$ 350";
             // 
-            // lblFecha
+            // label16
             // 
-            lblFecha.AutoSize = true;
-            lblFecha.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            lblFecha.Location = new Point(197, 31);
-            lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(58, 21);
-            lblFecha.TabIndex = 36;
-            lblFecha.Text = "Fecha:";
+            label16.AutoSize = true;
+            label16.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            label16.ForeColor = Color.Blue;
+            label16.Location = new Point(964, 73);
+            label16.Name = "label16";
+            label16.Size = new Size(92, 32);
+            label16.TabIndex = 15;
+            label16.Text = "C$ 350";
+            label16.Click += label16_Click;
             // 
-            // textBox9
+            // dgvUltimasVentas
             // 
-            textBox9.Font = new Font("Segoe UI Light", 12F);
-            textBox9.Location = new Point(14, 111);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(174, 29);
-            textBox9.TabIndex = 38;
+            dgvUltimasVentas.AllowUserToAddRows = false;
+            dgvUltimasVentas.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(255, 248, 240);
+            dgvUltimasVentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dgvUltimasVentas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvUltimasVentas.BackgroundColor = Color.White;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(65, 36, 2);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgvUltimasVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dgvUltimasVentas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvUltimasVentas.Columns.AddRange(new DataGridViewColumn[] { colFactura, colFecha, colCliente, colTotal, colUsuario });
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(250, 238, 218);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(65, 36, 2);
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dgvUltimasVentas.DefaultCellStyle = dataGridViewCellStyle3;
+            dgvUltimasVentas.Location = new Point(6, 25);
+            dgvUltimasVentas.Name = "dgvUltimasVentas";
+            dgvUltimasVentas.ReadOnly = true;
+            dgvUltimasVentas.RowHeadersVisible = false;
+            dgvUltimasVentas.RowHeadersWidth = 62;
+            dgvUltimasVentas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvUltimasVentas.Size = new Size(871, 305);
+            dgvUltimasVentas.TabIndex = 16;
             // 
-            // numericUpDown1
+            // iconButton2
             // 
-            numericUpDown1.Location = new Point(519, 219);
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(120, 29);
-            numericUpDown1.TabIndex = 39;
+            iconButton2.BackColor = Color.FromArgb(31, 107, 199);
+            iconButton2.FlatStyle = FlatStyle.Flat;
+            iconButton2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            iconButton2.ForeColor = Color.White;
+            iconButton2.IconChar = FontAwesome.Sharp.IconChar.Save;
+            iconButton2.IconColor = Color.White;
+            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton2.IconSize = 30;
+            iconButton2.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton2.Location = new Point(672, 17);
+            iconButton2.Name = "iconButton2";
+            iconButton2.Size = new Size(250, 50);
+            iconButton2.TabIndex = 35;
+            iconButton2.Text = "Guardar Venta";
+            iconButton2.UseVisualStyleBackColor = false;
             // 
-            // cmbProducto
+            // iconButton3
             // 
-            cmbProducto.FormattingEnabled = true;
-            cmbProducto.Location = new Point(19, 216);
-            cmbProducto.Name = "cmbProducto";
-            cmbProducto.Size = new Size(222, 29);
-            cmbProducto.TabIndex = 40;
-            // 
-            // lblVenta
-            // 
-            lblVenta.AutoSize = true;
-            lblVenta.Location = new Point(19, 55);
-            lblVenta.Name = "lblVenta";
-            lblVenta.Size = new Size(64, 21);
-            lblVenta.TabIndex = 41;
-            lblVenta.Text = "000001";
-            // 
-            // dtpFecha
-            // 
-            dtpFecha.Location = new Point(197, 52);
-            dtpFecha.Name = "dtpFecha";
-            dtpFecha.Size = new Size(271, 29);
-            dtpFecha.TabIndex = 42;
-            // 
-            // panel4
-            // 
-            panel4.Controls.Add(iconButton5);
-            panel4.Controls.Add(iconButton11);
-            panel4.Controls.Add(btnAgregarVenta);
-            panel4.Location = new Point(14, 320);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(1062, 78);
-            panel4.TabIndex = 32;
-            // 
-            // btnAgregarVenta
-            // 
-            btnAgregarVenta.BackColor = Color.FromArgb(48, 161, 73);
-            btnAgregarVenta.BackgroundImageLayout = ImageLayout.None;
-            btnAgregarVenta.FlatStyle = FlatStyle.Flat;
-            btnAgregarVenta.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnAgregarVenta.ForeColor = Color.White;
-            btnAgregarVenta.IconChar = FontAwesome.Sharp.IconChar.Add;
-            btnAgregarVenta.IconColor = Color.White;
-            btnAgregarVenta.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnAgregarVenta.IconSize = 30;
-            btnAgregarVenta.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAgregarVenta.Location = new Point(210, 15);
-            btnAgregarVenta.Name = "btnAgregarVenta";
-            btnAgregarVenta.Size = new Size(224, 50);
-            btnAgregarVenta.TabIndex = 43;
-            btnAgregarVenta.Text = "Nueva Venta";
-            btnAgregarVenta.UseVisualStyleBackColor = false;
+            iconButton3.BackColor = Color.FromArgb(48, 161, 73);
+            iconButton3.FlatStyle = FlatStyle.Flat;
+            iconButton3.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            iconButton3.ForeColor = Color.White;
+            iconButton3.IconChar = FontAwesome.Sharp.IconChar.Add;
+            iconButton3.IconColor = Color.White;
+            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton3.IconSize = 30;
+            iconButton3.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton3.Location = new Point(160, 17);
+            iconButton3.Name = "iconButton3";
+            iconButton3.Size = new Size(250, 50);
+            iconButton3.TabIndex = 34;
+            iconButton3.Text = "Nueva Venta";
+            iconButton3.UseVisualStyleBackColor = false;
             // 
             // iconButton11
             // 
@@ -1008,132 +658,145 @@
             iconButton11.FlatStyle = FlatStyle.Flat;
             iconButton11.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             iconButton11.ForeColor = Color.White;
-            iconButton11.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            iconButton11.IconChar = FontAwesome.Sharp.IconChar.X;
             iconButton11.IconColor = Color.White;
             iconButton11.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton11.IconSize = 30;
             iconButton11.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton11.Location = new Point(440, 15);
+            iconButton11.Location = new Point(416, 17);
             iconButton11.Name = "iconButton11";
-            iconButton11.Size = new Size(224, 50);
-            iconButton11.TabIndex = 44;
+            iconButton11.Size = new Size(250, 50);
+            iconButton11.TabIndex = 36;
             iconButton11.Text = "Cancelar";
             iconButton11.UseVisualStyleBackColor = false;
             // 
-            // iconButton5
+            // colFactura
             // 
-            iconButton5.BackColor = Color.FromArgb(31, 107, 199);
-            iconButton5.FlatStyle = FlatStyle.Flat;
-            iconButton5.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            iconButton5.ForeColor = Color.White;
-            iconButton5.IconChar = FontAwesome.Sharp.IconChar.Save;
-            iconButton5.IconColor = Color.White;
-            iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton5.IconSize = 30;
-            iconButton5.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton5.Location = new Point(670, 15);
-            iconButton5.Name = "iconButton5";
-            iconButton5.Size = new Size(224, 50);
-            iconButton5.TabIndex = 43;
-            iconButton5.Text = "Guardar Venta";
-            iconButton5.UseVisualStyleBackColor = false;
-=======
-            colUsuario.Width = 400;
->>>>>>> ce9b5ccd2439b1443fae4ef1f2efd62b7f1f9616
+            colFactura.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            colFactura.FillWeight = 203.045685F;
+            colFactura.HeaderText = "Factura";
+            colFactura.MinimumWidth = 8;
+            colFactura.Name = "colFactura";
+            colFactura.ReadOnly = true;
+            colFactura.Width = 120;
+            // 
+            // colFecha
+            // 
+            colFecha.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            colFecha.FillWeight = 103.325485F;
+            colFecha.HeaderText = "Fecha";
+            colFecha.MinimumWidth = 8;
+            colFecha.Name = "colFecha";
+            colFecha.ReadOnly = true;
+            colFecha.Width = 120;
+            // 
+            // colCliente
+            // 
+            colCliente.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            colCliente.FillWeight = 167.295044F;
+            colCliente.HeaderText = "Cliente";
+            colCliente.MinimumWidth = 8;
+            colCliente.Name = "colCliente";
+            colCliente.ReadOnly = true;
+            colCliente.Width = 120;
+            // 
+            // colTotal
+            // 
+            colTotal.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            colTotal.FillWeight = 18.00486F;
+            colTotal.HeaderText = "Total";
+            colTotal.MinimumWidth = 8;
+            colTotal.Name = "colTotal";
+            colTotal.ReadOnly = true;
+            colTotal.Width = 120;
+            // 
+            // colUsuario
+            // 
+            colUsuario.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            colUsuario.FillWeight = 8.328922F;
+            colUsuario.HeaderText = "Usuario";
+            colUsuario.MinimumWidth = 8;
+            colUsuario.Name = "colUsuario";
+            colUsuario.ReadOnly = true;
+            colUsuario.Width = 120;
             // 
             // FrmVentas
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1924, 1050);
-            Controls.Add(panel2);
+            BackColor = Color.FromArgb(253, 253, 253);
+            ClientSize = new Size(1350, 729);
+            Controls.Add(groupBox4);
+            Controls.Add(groupBox3);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
             Controls.Add(panel1);
-            Margin = new Padding(4, 5, 4, 5);
             MaximizeBox = false;
             Name = "FrmVentas";
-            StartPosition = FormStartPosition.CenterScreen;
             Text = "Ventas";
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel2.ResumeLayout(false);
-            groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dgvUltimasVentas).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
-            panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvUltimasVentas).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel1;
-        private Panel panel2;
-        private GroupBox groupBox1;
-        private FontAwesome.Sharp.IconButton btnBuscar;
-        private TextBox cmbMetodoPago;
-        private Label lblMetodoPago;
-        private TextBox cmbCliente;
-        private TextBox textBox2;
-        private TextBox txtStock;
-        private Label lblCliente;
-        private Label lblProducto;
-        private Label lblNumeroVenta;
-        private GroupBox groupBox2;
-        private DataGridView dgvUltimasVentas;
-<<<<<<< HEAD
-=======
-        private Panel panel3;
-        private Label label3;
-        private Label label5;
->>>>>>> ce9b5ccd2439b1443fae4ef1f2efd62b7f1f9616
-        private FontAwesome.Sharp.IconButton iconButton10;
-        private FontAwesome.Sharp.IconButton iconButton9;
-        private FontAwesome.Sharp.IconButton iconButton7;
-        private FontAwesome.Sharp.IconButton iconButton6;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton btn_IrUsuarios_frmPrincipal;
+        private FontAwesome.Sharp.IconButton btn_IrInventario_frmPrincipal;
+        private FontAwesome.Sharp.IconButton btn_IrCliente_frmPrincipal;
+        private FontAwesome.Sharp.IconButton btn_irProducto_frmPrincipal;
+        private FontAwesome.Sharp.IconButton btn_irVenta_frmPrincipal;
         private FontAwesome.Sharp.IconButton iconButton1;
         private PictureBox pictureBox1;
-        private FontAwesome.Sharp.IconButton btnGuardar;
-        private Panel panel3;
+        private FontAwesome.Sharp.IconButton btn_Salir_FrmPrincipal;
+        private GroupBox groupBox1;
+        private GroupBox groupBox2;
+        private GroupBox groupBox3;
+        private GroupBox groupBox4;
+        private DateTimePicker dateTimePicker1;
+        private Label label6;
+        private Label label5;
+        private Label label4;
+        private Label label3;
+        private Label label2;
+        private Label label1;
+        private TextBox textBox3;
+        private TextBox textBox2;
+        private TextBox textBox1;
+        private Label label10;
         private Label label9;
         private Label label8;
         private Label label7;
-        private Label label6;
-        private Label label5;
-        private Label label3;
+        private TextBox textBox5;
+        private TextBox textBox4;
+        private ComboBox comboBox1;
+        private NumericUpDown numericUpDown1;
+        private Label label11;
+        private FontAwesome.Sharp.IconButton iconButton5;
+        private FontAwesome.Sharp.IconButton iconButton4;
+        private Label label16;
+        private Label label15;
+        private Label label14;
+        private Label label13;
+        private Label label12;
+        private DataGridView dgvUltimasVentas;
+        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton iconButton11;
         private DataGridViewTextBoxColumn colFactura;
         private DataGridViewTextBoxColumn colFecha;
         private DataGridViewTextBoxColumn colCliente;
         private DataGridViewTextBoxColumn colTotal;
         private DataGridViewTextBoxColumn colUsuario;
-        private Label label13;
-        private TextBox textBox6;
-        private Label lblPrecio;
-        private TextBox txtPrecio;
-        private Label lblStock;
-        private FontAwesome.Sharp.IconButton btnAgregar;
-        private TextBox textBox9;
-        private Label lblFecha;
-        private Label lblUsuario;
-        private ComboBox cmbProducto;
-        private NumericUpDown numericUpDown1;
-        private Label lblVenta;
-        private DateTimePicker dtpFecha;
-        private Panel panel4;
-        private FontAwesome.Sharp.IconButton btnAgregarVenta;
-        private FontAwesome.Sharp.IconButton iconButton5;
-<<<<<<< HEAD
-        private FontAwesome.Sharp.IconButton iconButton11;
-=======
-        private DataGridViewTextBoxColumn colMetodoDePago;
-        private DataGridViewTextBoxColumn colFecha;
-        private DataGridViewTextBoxColumn colCliente;
-        private DataGridViewTextBoxColumn colTotal;
-        private DataGridViewTextBoxColumn colUsuario;
->>>>>>> ce9b5ccd2439b1443fae4ef1f2efd62b7f1f9616
     }
 }
