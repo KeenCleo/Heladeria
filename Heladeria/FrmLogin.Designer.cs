@@ -52,10 +52,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(139, 188);
-            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Location = new Point(97, 113);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(471, 367);
+            pictureBox1.Size = new Size(330, 220);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -64,10 +63,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            label1.Location = new Point(207, 560);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(145, 336);
             label1.Name = "label1";
-            label1.Size = new Size(337, 41);
+            label1.Size = new Size(228, 28);
             label1.TabIndex = 1;
             label1.Text = "Sistema de Gestión de ";
             // 
@@ -76,10 +74,9 @@
             label2.AutoSize = true;
             label2.FlatStyle = FlatStyle.Popup;
             label2.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            label2.Location = new Point(223, 607);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(156, 364);
             label2.Name = "label2";
-            label2.Size = new Size(288, 41);
+            label2.Size = new Size(195, 28);
             label2.TabIndex = 2;
             label2.Text = "Ventas e Inventario";
             // 
@@ -95,10 +92,9 @@
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
-            panel1.Location = new Point(633, 140);
-            panel1.Margin = new Padding(4, 5, 4, 5);
+            panel1.Location = new Point(443, 84);
             panel1.Name = "panel1";
-            panel1.Size = new Size(554, 622);
+            panel1.Size = new Size(388, 373);
             panel1.TabIndex = 3;
             // 
             // iconPictureBox2
@@ -108,11 +104,10 @@
             iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.User;
             iconPictureBox2.IconColor = SystemColors.ActiveCaptionText;
             iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconPictureBox2.IconSize = 43;
-            iconPictureBox2.Location = new Point(27, 213);
-            iconPictureBox2.Margin = new Padding(4, 5, 4, 5);
+            iconPictureBox2.IconSize = 30;
+            iconPictureBox2.Location = new Point(19, 128);
             iconPictureBox2.Name = "iconPictureBox2";
-            iconPictureBox2.Size = new Size(43, 50);
+            iconPictureBox2.Size = new Size(30, 30);
             iconPictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
             iconPictureBox2.TabIndex = 13;
             iconPictureBox2.TabStop = false;
@@ -124,11 +119,10 @@
             iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Lock;
             iconPictureBox1.IconColor = SystemColors.ActiveCaptionText;
             iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconPictureBox1.IconSize = 43;
-            iconPictureBox1.Location = new Point(27, 332);
-            iconPictureBox1.Margin = new Padding(4, 5, 4, 5);
+            iconPictureBox1.IconSize = 30;
+            iconPictureBox1.Location = new Point(19, 199);
             iconPictureBox1.Name = "iconPictureBox1";
-            iconPictureBox1.Size = new Size(43, 50);
+            iconPictureBox1.Size = new Size(30, 30);
             iconPictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             iconPictureBox1.TabIndex = 4;
             iconPictureBox1.TabStop = false;
@@ -144,10 +138,9 @@
             btn_Salir_Loging.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_Salir_Loging.IconSize = 30;
             btn_Salir_Loging.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_Salir_Loging.Location = new Point(277, 423);
-            btn_Salir_Loging.Margin = new Padding(4, 5, 4, 5);
+            btn_Salir_Loging.Location = new Point(194, 254);
             btn_Salir_Loging.Name = "btn_Salir_Loging";
-            btn_Salir_Loging.Size = new Size(200, 70);
+            btn_Salir_Loging.Size = new Size(140, 42);
             btn_Salir_Loging.TabIndex = 12;
             btn_Salir_Loging.Text = "Salir";
             btn_Salir_Loging.UseVisualStyleBackColor = false;
@@ -164,10 +157,9 @@
             btn_Ingresar_Loging.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_Ingresar_Loging.IconSize = 30;
             btn_Ingresar_Loging.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_Ingresar_Loging.Location = new Point(69, 423);
-            btn_Ingresar_Loging.Margin = new Padding(4, 5, 4, 5);
+            btn_Ingresar_Loging.Location = new Point(48, 254);
             btn_Ingresar_Loging.Name = "btn_Ingresar_Loging";
-            btn_Ingresar_Loging.Size = new Size(200, 70);
+            btn_Ingresar_Loging.Size = new Size(140, 42);
             btn_Ingresar_Loging.TabIndex = 11;
             btn_Ingresar_Loging.Text = "Ingresar";
             btn_Ingresar_Loging.UseVisualStyleBackColor = false;
@@ -176,31 +168,29 @@
             // txt_ClaveUsuario_Loging
             // 
             txt_ClaveUsuario_Loging.Font = new Font("Segoe UI Light", 12F);
-            txt_ClaveUsuario_Loging.Location = new Point(79, 333);
-            txt_ClaveUsuario_Loging.Margin = new Padding(4, 5, 4, 5);
+            txt_ClaveUsuario_Loging.Location = new Point(55, 200);
             txt_ClaveUsuario_Loging.Name = "txt_ClaveUsuario_Loging";
             txt_ClaveUsuario_Loging.PlaceholderText = " Ingrese su contraseña";
-            txt_ClaveUsuario_Loging.Size = new Size(407, 39);
+            txt_ClaveUsuario_Loging.Size = new Size(286, 29);
             txt_ClaveUsuario_Loging.TabIndex = 8;
+            txt_ClaveUsuario_Loging.UseSystemPasswordChar = true;
             // 
             // txt_UsuarioName_Loging
             // 
             txt_UsuarioName_Loging.Font = new Font("Segoe UI Light", 12F);
-            txt_UsuarioName_Loging.Location = new Point(79, 215);
-            txt_UsuarioName_Loging.Margin = new Padding(4, 5, 4, 5);
+            txt_UsuarioName_Loging.Location = new Point(55, 129);
             txt_UsuarioName_Loging.Name = "txt_UsuarioName_Loging";
             txt_UsuarioName_Loging.PlaceholderText = " Ingrese su usuario";
-            txt_UsuarioName_Loging.Size = new Size(407, 39);
+            txt_UsuarioName_Loging.Size = new Size(286, 29);
             txt_UsuarioName_Loging.TabIndex = 7;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            label5.Location = new Point(64, 282);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Location = new Point(45, 169);
             label5.Name = "label5";
-            label5.Size = new Size(184, 41);
+            label5.Size = new Size(123, 28);
             label5.TabIndex = 6;
             label5.Text = "Contraseña:";
             // 
@@ -208,10 +198,9 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            label4.Location = new Point(64, 163);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(45, 98);
             label4.Name = "label4";
-            label4.Size = new Size(134, 41);
+            label4.Size = new Size(89, 28);
             label4.TabIndex = 5;
             label4.Text = "Usuario:";
             // 
@@ -219,10 +208,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label3.Location = new Point(54, 57);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(38, 34);
             label3.Name = "label3";
-            label3.Size = new Size(242, 48);
+            label3.Size = new Size(167, 32);
             label3.TabIndex = 4;
             label3.Text = "Iniciar Sesión";
             // 
@@ -240,15 +228,14 @@
             // 
             // FrmLogin
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(253, 253, 253);
-            ClientSize = new Size(1303, 923);
+            ClientSize = new Size(912, 554);
             Controls.Add(panel1);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
-            Margin = new Padding(4, 5, 4, 5);
             MaximizeBox = false;
             Name = "FrmLogin";
             StartPosition = FormStartPosition.CenterScreen;

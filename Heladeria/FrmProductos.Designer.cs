@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductos));
-            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             panel1 = new Panel();
             iconButton10 = new FontAwesome.Sharp.IconButton();
             iconButton9 = new FontAwesome.Sharp.IconButton();
@@ -42,6 +42,8 @@
             iconButton1 = new FontAwesome.Sharp.IconButton();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
+            iconButton12 = new FontAwesome.Sharp.IconButton();
+            textBox4 = new TextBox();
             groupBox2 = new GroupBox();
             dgvUltimasVentas = new DataGridView();
             colCódigo = new DataGridViewTextBoxColumn();
@@ -50,7 +52,7 @@
             colStock = new DataGridViewTextBoxColumn();
             colFechaCaducidad = new DataGridViewTextBoxColumn();
             groupBox1 = new GroupBox();
-            iconButton12 = new FontAwesome.Sharp.IconButton();
+            dateTimePicker1 = new DateTimePicker();
             iconButton11 = new FontAwesome.Sharp.IconButton();
             iconButton8 = new FontAwesome.Sharp.IconButton();
             iconButton5 = new FontAwesome.Sharp.IconButton();
@@ -62,8 +64,6 @@
             label2 = new Label();
             label1 = new Label();
             label12 = new Label();
-            textBox4 = new TextBox();
-            dateTimePicker1 = new DateTimePicker();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -84,9 +84,8 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(4, 5, 4, 5);
             panel1.Name = "panel1";
-            panel1.Size = new Size(357, 1050);
+            panel1.Size = new Size(250, 630);
             panel1.TabIndex = 0;
             // 
             // iconButton10
@@ -102,10 +101,9 @@
             iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton10.IconSize = 40;
             iconButton10.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton10.Location = new Point(0, 1087);
-            iconButton10.Margin = new Padding(4, 5, 4, 5);
+            iconButton10.Location = new Point(0, 654);
             iconButton10.Name = "iconButton10";
-            iconButton10.Size = new Size(357, 125);
+            iconButton10.Size = new Size(250, 75);
             iconButton10.TabIndex = 53;
             iconButton10.Text = "Salir";
             iconButton10.UseVisualStyleBackColor = false;
@@ -123,10 +121,9 @@
             iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton9.IconSize = 40;
             iconButton9.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton9.Location = new Point(0, 962);
-            iconButton9.Margin = new Padding(4, 5, 4, 5);
+            iconButton9.Location = new Point(0, 579);
             iconButton9.Name = "iconButton9";
-            iconButton9.Size = new Size(357, 125);
+            iconButton9.Size = new Size(250, 75);
             iconButton9.TabIndex = 52;
             iconButton9.Text = "Usuarios";
             iconButton9.UseVisualStyleBackColor = false;
@@ -144,10 +141,9 @@
             iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton7.IconSize = 40;
             iconButton7.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton7.Location = new Point(0, 837);
-            iconButton7.Margin = new Padding(4, 5, 4, 5);
+            iconButton7.Location = new Point(0, 504);
             iconButton7.Name = "iconButton7";
-            iconButton7.Size = new Size(357, 125);
+            iconButton7.Size = new Size(250, 75);
             iconButton7.TabIndex = 51;
             iconButton7.Text = "Inventario";
             iconButton7.UseVisualStyleBackColor = false;
@@ -165,10 +161,9 @@
             iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton6.IconSize = 40;
             iconButton6.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton6.Location = new Point(0, 712);
-            iconButton6.Margin = new Padding(4, 5, 4, 5);
+            iconButton6.Location = new Point(0, 429);
             iconButton6.Name = "iconButton6";
-            iconButton6.Size = new Size(357, 125);
+            iconButton6.Size = new Size(250, 75);
             iconButton6.TabIndex = 50;
             iconButton6.Text = "Clientes";
             iconButton6.UseVisualStyleBackColor = false;
@@ -186,10 +181,9 @@
             iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton3.IconSize = 40;
             iconButton3.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton3.Location = new Point(0, 587);
-            iconButton3.Margin = new Padding(4, 5, 4, 5);
+            iconButton3.Location = new Point(0, 354);
             iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(357, 125);
+            iconButton3.Size = new Size(250, 75);
             iconButton3.TabIndex = 49;
             iconButton3.Text = "Productos";
             iconButton3.UseVisualStyleBackColor = false;
@@ -207,10 +201,9 @@
             iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton2.IconSize = 40;
             iconButton2.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton2.Location = new Point(0, 462);
-            iconButton2.Margin = new Padding(4, 5, 4, 5);
+            iconButton2.Location = new Point(0, 279);
             iconButton2.Name = "iconButton2";
-            iconButton2.Size = new Size(357, 125);
+            iconButton2.Size = new Size(250, 75);
             iconButton2.TabIndex = 48;
             iconButton2.Text = "Ventas";
             iconButton2.UseVisualStyleBackColor = false;
@@ -228,10 +221,9 @@
             iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton1.IconSize = 40;
             iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton1.Location = new Point(0, 337);
-            iconButton1.Margin = new Padding(4, 5, 4, 5);
+            iconButton1.Location = new Point(0, 204);
             iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(357, 125);
+            iconButton1.Size = new Size(250, 75);
             iconButton1.TabIndex = 47;
             iconButton1.Text = "Inicio";
             iconButton1.UseVisualStyleBackColor = false;
@@ -245,9 +237,8 @@
             pictureBox1.Enabled = false;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(357, 337);
+            pictureBox1.Size = new Size(250, 204);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 46;
             pictureBox1.TabStop = false;
@@ -260,21 +251,46 @@
             panel2.Controls.Add(groupBox2);
             panel2.Controls.Add(groupBox1);
             panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(357, 0);
-            panel2.Margin = new Padding(4, 5, 4, 5);
+            panel2.Location = new Point(250, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1567, 1050);
+            panel2.Size = new Size(1097, 630);
             panel2.TabIndex = 1;
+            // 
+            // iconButton12
+            // 
+            iconButton12.BackColor = Color.Gray;
+            iconButton12.FlatStyle = FlatStyle.Flat;
+            iconButton12.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            iconButton12.ForeColor = Color.White;
+            iconButton12.IconChar = FontAwesome.Sharp.IconChar.Search;
+            iconButton12.IconColor = Color.White;
+            iconButton12.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton12.IconSize = 30;
+            iconButton12.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton12.Location = new Point(957, 305);
+            iconButton12.Name = "iconButton12";
+            iconButton12.Size = new Size(125, 31);
+            iconButton12.TabIndex = 27;
+            iconButton12.Text = "Buscar";
+            iconButton12.UseVisualStyleBackColor = false;
+            iconButton12.Click += iconButton12_Click;
+            // 
+            // textBox4
+            // 
+            textBox4.Font = new Font("Segoe UI Light", 12F);
+            textBox4.Location = new Point(660, 306);
+            textBox4.Name = "textBox4";
+            textBox4.PlaceholderText = "Nombre del Producto";
+            textBox4.Size = new Size(292, 29);
+            textBox4.TabIndex = 28;
             // 
             // groupBox2
             // 
             groupBox2.Controls.Add(dgvUltimasVentas);
             groupBox2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            groupBox2.Location = new Point(9, 547);
-            groupBox2.Margin = new Padding(4, 5, 4, 5);
+            groupBox2.Location = new Point(6, 328);
             groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(4, 5, 4, 5);
-            groupBox2.Size = new Size(1546, 547);
+            groupBox2.Size = new Size(1082, 328);
             groupBox2.TabIndex = 28;
             groupBox2.TabStop = false;
             groupBox2.Text = "Lista de Productos";
@@ -283,36 +299,35 @@
             // 
             dgvUltimasVentas.AllowUserToAddRows = false;
             dgvUltimasVentas.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = Color.FromArgb(255, 248, 240);
-            dgvUltimasVentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(255, 248, 240);
+            dgvUltimasVentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dgvUltimasVentas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvUltimasVentas.BackgroundColor = Color.White;
-            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = Color.FromArgb(65, 36, 2);
-            dataGridViewCellStyle8.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            dataGridViewCellStyle8.ForeColor = Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.True;
-            dgvUltimasVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(65, 36, 2);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgvUltimasVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgvUltimasVentas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvUltimasVentas.Columns.AddRange(new DataGridViewColumn[] { colCódigo, colFecha, colPrecio, colStock, colFechaCaducidad });
-            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = Color.FromArgb(250, 238, 218);
-            dataGridViewCellStyle9.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            dataGridViewCellStyle9.ForeColor = Color.FromArgb(65, 36, 2);
-            dataGridViewCellStyle9.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.False;
-            dgvUltimasVentas.DefaultCellStyle = dataGridViewCellStyle9;
-            dgvUltimasVentas.Location = new Point(0, 40);
-            dgvUltimasVentas.Margin = new Padding(4, 5, 4, 5);
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(250, 238, 218);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(65, 36, 2);
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dgvUltimasVentas.DefaultCellStyle = dataGridViewCellStyle3;
+            dgvUltimasVentas.Location = new Point(0, 24);
             dgvUltimasVentas.Name = "dgvUltimasVentas";
             dgvUltimasVentas.ReadOnly = true;
             dgvUltimasVentas.RowHeadersVisible = false;
             dgvUltimasVentas.RowHeadersWidth = 62;
             dgvUltimasVentas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvUltimasVentas.Size = new Size(1514, 490);
+            dgvUltimasVentas.Size = new Size(1060, 294);
             dgvUltimasVentas.TabIndex = 28;
             dgvUltimasVentas.CellContentClick += dgvUltimasVentas_CellContentClick;
             // 
@@ -355,7 +370,7 @@
             colStock.Name = "colStock";
             colStock.ReadOnly = true;
             colStock.Resizable = DataGridViewTriState.True;
-            colStock.Width = 111;
+            colStock.Width = 77;
             // 
             // colFechaCaducidad
             // 
@@ -382,34 +397,22 @@
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(label12);
             groupBox1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            groupBox1.Location = new Point(9, 20);
-            groupBox1.Margin = new Padding(4, 5, 4, 5);
+            groupBox1.Location = new Point(6, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(4, 5, 4, 5);
-            groupBox1.Size = new Size(1546, 480);
+            groupBox1.Size = new Size(1082, 288);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Datos del Producto";
             // 
-            // iconButton12
+            // dateTimePicker1
             // 
-            iconButton12.BackColor = Color.Gray;
-            iconButton12.FlatStyle = FlatStyle.Flat;
-            iconButton12.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            iconButton12.ForeColor = Color.White;
-            iconButton12.IconChar = FontAwesome.Sharp.IconChar.Search;
-            iconButton12.IconColor = Color.White;
-            iconButton12.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton12.IconSize = 30;
-            iconButton12.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton12.Location = new Point(1368, 523);
-            iconButton12.Margin = new Padding(4, 5, 4, 5);
-            iconButton12.Name = "iconButton12";
-            iconButton12.Size = new Size(179, 39);
-            iconButton12.TabIndex = 27;
-            iconButton12.Text = "Buscar";
-            iconButton12.UseVisualStyleBackColor = false;
-            iconButton12.Click += iconButton12_Click;
+            dateTimePicker1.CustomFormat = "dd/MM/yyyy";
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.Location = new Point(622, 106);
+            dateTimePicker1.Margin = new Padding(2, 2, 2, 2);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(400, 29);
+            dateTimePicker1.TabIndex = 27;
             // 
             // iconButton11
             // 
@@ -422,10 +425,9 @@
             iconButton11.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton11.IconSize = 30;
             iconButton11.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton11.Location = new Point(654, 355);
-            iconButton11.Margin = new Padding(4, 5, 4, 5);
+            iconButton11.Location = new Point(458, 213);
             iconButton11.Name = "iconButton11";
-            iconButton11.Size = new Size(179, 83);
+            iconButton11.Size = new Size(125, 50);
             iconButton11.TabIndex = 26;
             iconButton11.Text = "Eliminar";
             iconButton11.UseVisualStyleBackColor = false;
@@ -441,10 +443,9 @@
             iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton8.IconSize = 30;
             iconButton8.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton8.Location = new Point(447, 355);
-            iconButton8.Margin = new Padding(4, 5, 4, 5);
+            iconButton8.Location = new Point(313, 213);
             iconButton8.Name = "iconButton8";
-            iconButton8.Size = new Size(179, 83);
+            iconButton8.Size = new Size(125, 50);
             iconButton8.TabIndex = 25;
             iconButton8.Text = "Editar";
             iconButton8.UseVisualStyleBackColor = false;
@@ -460,10 +461,9 @@
             iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton5.IconSize = 30;
             iconButton5.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton5.Location = new Point(233, 355);
-            iconButton5.Margin = new Padding(4, 5, 4, 5);
+            iconButton5.Location = new Point(163, 213);
             iconButton5.Name = "iconButton5";
-            iconButton5.Size = new Size(179, 83);
+            iconButton5.Size = new Size(125, 50);
             iconButton5.TabIndex = 24;
             iconButton5.Text = "Guardar";
             iconButton5.UseVisualStyleBackColor = false;
@@ -479,10 +479,9 @@
             iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton4.IconSize = 30;
             iconButton4.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton4.Location = new Point(21, 355);
-            iconButton4.Margin = new Padding(4, 5, 4, 5);
+            iconButton4.Location = new Point(15, 213);
             iconButton4.Name = "iconButton4";
-            iconButton4.Size = new Size(179, 83);
+            iconButton4.Size = new Size(125, 50);
             iconButton4.TabIndex = 12;
             iconButton4.Text = "Ingresar";
             iconButton4.UseVisualStyleBackColor = false;
@@ -490,21 +489,19 @@
             // textBox5
             // 
             textBox5.Font = new Font("Segoe UI Light", 12F);
-            textBox5.Location = new Point(888, 71);
-            textBox5.Margin = new Padding(4, 5, 4, 5);
+            textBox5.Location = new Point(622, 43);
             textBox5.Name = "textBox5";
             textBox5.PlaceholderText = "¿Cuanto queda del producto?";
-            textBox5.Size = new Size(569, 39);
+            textBox5.Size = new Size(400, 29);
             textBox5.TabIndex = 22;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label4.Location = new Point(797, 74);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(558, 44);
             label4.Name = "label4";
-            label4.Size = new Size(83, 32);
+            label4.Size = new Size(57, 21);
             label4.TabIndex = 20;
             label4.Text = "Stock:";
             label4.Click += label4_Click;
@@ -512,21 +509,19 @@
             // textBox3
             // 
             textBox3.Font = new Font("Segoe UI Light", 12F);
-            textBox3.Location = new Point(132, 179);
-            textBox3.Margin = new Padding(4, 5, 4, 5);
+            textBox3.Location = new Point(92, 107);
             textBox3.Name = "textBox3";
             textBox3.PlaceholderText = " Ingrese precio del producto";
-            textBox3.Size = new Size(434, 39);
+            textBox3.Size = new Size(305, 29);
             textBox3.TabIndex = 19;
             // 
             // textBox2
             // 
             textBox2.Font = new Font("Segoe UI Light", 12F);
-            textBox2.Location = new Point(132, 71);
-            textBox2.Margin = new Padding(4, 5, 4, 5);
+            textBox2.Location = new Point(92, 43);
             textBox2.Name = "textBox2";
             textBox2.PlaceholderText = " Ingrese nombre del producto";
-            textBox2.Size = new Size(412, 39);
+            textBox2.Size = new Size(290, 29);
             textBox2.TabIndex = 18;
             textBox2.TextChanged += textBox2_TextChanged;
             // 
@@ -534,10 +529,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label2.Location = new Point(9, 182);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(6, 109);
             label2.Name = "label2";
-            label2.Size = new Size(93, 32);
+            label2.Size = new Size(62, 21);
             label2.TabIndex = 16;
             label2.Text = "Precio:";
             // 
@@ -545,10 +539,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label1.Location = new Point(9, 71);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(6, 43);
             label1.Name = "label1";
-            label1.Size = new Size(115, 32);
+            label1.Size = new Size(77, 21);
             label1.TabIndex = 15;
             label1.Text = "Nombre:";
             // 
@@ -556,40 +549,19 @@
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label12.Location = new Point(626, 182);
-            label12.Margin = new Padding(4, 0, 4, 0);
+            label12.Location = new Point(438, 109);
             label12.Name = "label12";
-            label12.Size = new Size(254, 32);
+            label12.Size = new Size(170, 21);
             label12.TabIndex = 14;
             label12.Text = "Fecha de Caducidad :";
             // 
-            // textBox4
-            // 
-            textBox4.Font = new Font("Segoe UI Light", 12F);
-            textBox4.Location = new Point(941, 523);
-            textBox4.Margin = new Padding(4, 5, 4, 5);
-            textBox4.Name = "textBox4";
-            textBox4.PlaceholderText = "Nombre del Producto";
-            textBox4.Size = new Size(416, 39);
-            textBox4.TabIndex = 28;
-            // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.CustomFormat = "dd/MM/yyyy";
-            dateTimePicker1.Format = DateTimePickerFormat.Custom;
-            dateTimePicker1.Location = new Point(888, 177);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(569, 39);
-            dateTimePicker1.TabIndex = 27;
-            // 
             // FrmProductos
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1924, 1050);
+            ClientSize = new Size(1347, 630);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Margin = new Padding(4, 5, 4, 5);
             MaximizeBox = false;
             Name = "FrmProductos";
             Text = "Productos";

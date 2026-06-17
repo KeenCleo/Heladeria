@@ -7,9 +7,6 @@ namespace Heladeria.DAL
 {
     public  class VentasDAL
     {
-        public string GuardarVenta(Venta venta)
-        {
-
-        }
+        
     }
 }
