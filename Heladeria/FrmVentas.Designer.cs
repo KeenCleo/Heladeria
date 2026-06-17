@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmVentas));
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             panel1 = new Panel();
             btn_Salir_FrmPrincipal = new FontAwesome.Sharp.IconButton();
             btn_IrUsuarios_frmPrincipal = new FontAwesome.Sharp.IconButton();
@@ -105,7 +105,7 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(250, 827);
+            panel1.Size = new Size(250, 729);
             panel1.TabIndex = 0;
             // 
             // btn_Salir_FrmPrincipal
@@ -290,7 +290,7 @@
             // 
             cmbClientes.FormattingEnabled = true;
             cmbClientes.Location = new Point(391, 49);
-            cmbClientes.Margin = new Padding(2, 2, 2, 2);
+            cmbClientes.Margin = new Padding(2);
             cmbClientes.Name = "cmbClientes";
             cmbClientes.Size = new Size(201, 28);
             cmbClientes.TabIndex = 36;
@@ -325,7 +325,7 @@
             // 
             comboBox2.FormattingEnabled = true;
             comboBox2.Location = new Point(782, 49);
-            comboBox2.Margin = new Padding(2, 2, 2, 2);
+            comboBox2.Margin = new Padding(2);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(196, 28);
             comboBox2.TabIndex = 10;
@@ -520,28 +520,28 @@
             // 
             dgvUltimasVentas.AllowUserToAddRows = false;
             dgvUltimasVentas.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = Color.FromArgb(255, 248, 240);
-            dgvUltimasVentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(255, 248, 240);
+            dgvUltimasVentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dgvUltimasVentas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvUltimasVentas.BackgroundColor = Color.White;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = Color.FromArgb(65, 36, 2);
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
-            dgvUltimasVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(65, 36, 2);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgvUltimasVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgvUltimasVentas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvUltimasVentas.Columns.AddRange(new DataGridViewColumn[] { colFactura, colProducto, ColCantidad, colFecha, colCliente, colUsuario, colTotal });
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = Color.FromArgb(250, 238, 218);
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle6.ForeColor = Color.FromArgb(65, 36, 2);
-            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
-            dgvUltimasVentas.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(250, 238, 218);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(65, 36, 2);
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dgvUltimasVentas.DefaultCellStyle = dataGridViewCellStyle3;
             dgvUltimasVentas.Location = new Point(6, 25);
             dgvUltimasVentas.Name = "dgvUltimasVentas";
             dgvUltimasVentas.ReadOnly = true;
@@ -756,7 +756,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(253, 253, 253);
-            ClientSize = new Size(1452, 827);
+            ClientSize = new Size(1350, 729);
             Controls.Add(groupBox4);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
