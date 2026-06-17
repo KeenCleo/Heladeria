@@ -60,11 +60,6 @@
             label9 = new Label();
             panel6 = new Panel();
             dgvUltimasVentas = new DataGridView();
-            colIDVenta = new DataGridViewTextBoxColumn();
-            colFecha = new DataGridViewTextBoxColumn();
-            colCliente = new DataGridViewTextBoxColumn();
-            colMetodo = new DataGridViewTextBoxColumn();
-            colTotal = new DataGridViewTextBoxColumn();
             label4 = new Label();
             panel7 = new Panel();
             listBox1 = new ListBox();
@@ -74,6 +69,11 @@
             timer1 = new System.Windows.Forms.Timer(components);
             lbl_Hora_MenuPrincipal = new Label();
             lbl_BienvenidoUsuario = new Label();
+            colIDVenta = new DataGridViewTextBoxColumn();
+            colFecha = new DataGridViewTextBoxColumn();
+            colCliente = new DataGridViewTextBoxColumn();
+            colMetodo = new DataGridViewTextBoxColumn();
+            colTotal = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -104,7 +104,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(4, 5, 4, 5);
             panel1.Name = "panel1";
-            panel1.Size = new Size(357, 1151);
+            panel1.Size = new Size(357, 1050);
             panel1.TabIndex = 0;
             // 
             // btn_Salir_FrmPrincipal
@@ -514,56 +514,6 @@
             dgvUltimasVentas.Size = new Size(1217, 573);
             dgvUltimasVentas.TabIndex = 7;
             // 
-            // colIDVenta
-            // 
-            colIDVenta.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            colIDVenta.FillWeight = 203.045685F;
-            colIDVenta.HeaderText = "N° Venta";
-            colIDVenta.MinimumWidth = 8;
-            colIDVenta.Name = "colIDVenta";
-            colIDVenta.ReadOnly = true;
-            colIDVenta.Width = 80;
-            // 
-            // colFecha
-            // 
-            colFecha.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            colFecha.FillWeight = 103.325485F;
-            colFecha.HeaderText = "Fecha";
-            colFecha.MinimumWidth = 8;
-            colFecha.Name = "colFecha";
-            colFecha.ReadOnly = true;
-            colFecha.Width = 80;
-            // 
-            // colCliente
-            // 
-            colCliente.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            colCliente.FillWeight = 167.295044F;
-            colCliente.HeaderText = "Cliente";
-            colCliente.MinimumWidth = 8;
-            colCliente.Name = "colCliente";
-            colCliente.ReadOnly = true;
-            colCliente.Width = 150;
-            // 
-            // colMetodo
-            // 
-            colMetodo.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            colMetodo.FillWeight = 18.00486F;
-            colMetodo.HeaderText = "Método Pago";
-            colMetodo.MinimumWidth = 8;
-            colMetodo.Name = "colMetodo";
-            colMetodo.ReadOnly = true;
-            colMetodo.Width = 150;
-            // 
-            // colTotal
-            // 
-            colTotal.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            colTotal.FillWeight = 8.328922F;
-            colTotal.HeaderText = "Total";
-            colTotal.MinimumWidth = 8;
-            colTotal.Name = "colTotal";
-            colTotal.ReadOnly = true;
-            colTotal.Width = 120;
-            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -652,12 +602,62 @@
             lbl_BienvenidoUsuario.Text = "! Bienvenido ¡";
             lbl_BienvenidoUsuario.Click += label14_Click;
             // 
+            // colIDVenta
+            // 
+            colIDVenta.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            colIDVenta.FillWeight = 203.045685F;
+            colIDVenta.HeaderText = "N° Venta";
+            colIDVenta.MinimumWidth = 8;
+            colIDVenta.Name = "colIDVenta";
+            colIDVenta.ReadOnly = true;
+            colIDVenta.Width = 200;
+            // 
+            // colFecha
+            // 
+            colFecha.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            colFecha.FillWeight = 103.325485F;
+            colFecha.HeaderText = "Fecha";
+            colFecha.MinimumWidth = 8;
+            colFecha.Name = "colFecha";
+            colFecha.ReadOnly = true;
+            colFecha.Width = 200;
+            // 
+            // colCliente
+            // 
+            colCliente.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            colCliente.FillWeight = 167.295044F;
+            colCliente.HeaderText = "Cliente";
+            colCliente.MinimumWidth = 8;
+            colCliente.Name = "colCliente";
+            colCliente.ReadOnly = true;
+            colCliente.Width = 300;
+            // 
+            // colMetodo
+            // 
+            colMetodo.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            colMetodo.FillWeight = 18.00486F;
+            colMetodo.HeaderText = "Método Pago";
+            colMetodo.MinimumWidth = 8;
+            colMetodo.Name = "colMetodo";
+            colMetodo.ReadOnly = true;
+            colMetodo.Width = 250;
+            // 
+            // colTotal
+            // 
+            colTotal.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            colTotal.FillWeight = 8.328922F;
+            colTotal.HeaderText = "Total";
+            colTotal.MinimumWidth = 8;
+            colTotal.Name = "colTotal";
+            colTotal.ReadOnly = true;
+            colTotal.Width = 250;
+            // 
             // FrmMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(253, 253, 253);
-            ClientSize = new Size(1924, 1151);
+            ClientSize = new Size(1924, 1050);
             Controls.Add(lbl_BienvenidoUsuario);
             Controls.Add(lbl_Hora_MenuPrincipal);
             Controls.Add(lbl_Fecha_Menu_Principal);
@@ -725,11 +725,6 @@
         private Label label12;
         private Label lbl_Fecha_Menu_Principal;
         private DataGridView dgvUltimasVentas;
-        private DataGridViewTextBoxColumn colIDVenta;
-        private DataGridViewTextBoxColumn colFecha;
-        private DataGridViewTextBoxColumn colCliente;
-        private DataGridViewTextBoxColumn colMetodo;
-        private DataGridViewTextBoxColumn colTotal;
         private FontAwesome.Sharp.IconButton btn_Salir_FrmPrincipal;
         private FontAwesome.Sharp.IconButton btn_IrUsuarios_frmPrincipal;
         private FontAwesome.Sharp.IconButton btn_IrInventario_frmPrincipal;
@@ -742,5 +737,10 @@
         private Label lbl_Hora_MenuPrincipal;
         private Label label13;
         private Label lbl_BienvenidoUsuario;
+        private DataGridViewTextBoxColumn colIDVenta;
+        private DataGridViewTextBoxColumn colFecha;
+        private DataGridViewTextBoxColumn colCliente;
+        private DataGridViewTextBoxColumn colMetodo;
+        private DataGridViewTextBoxColumn colTotal;
     }
 }
