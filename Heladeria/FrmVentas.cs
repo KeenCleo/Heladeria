@@ -40,17 +40,15 @@ namespace Heladeria
         }
         private void CargarProductos()
         {
-            productos =
-            ventaBLL.CargarProductos();
+            DataTable productos = ventaBLL.CargarProductos();
 
             cmbProducto.DataSource = null;
-            
 
-            cmbProducto.DisplayMember =
-            "Nombre_Producto";
+            cmbProducto.DisplayMember = "Nombre_Producto";
+            cmbProducto.ValueMember = "ID_Producto";
 
-            cmbProducto.ValueMember =
-            "ID_Producto";
+            cmbProducto.DataSource = productos;
+
             cmbProducto.SelectedIndex = -1;
         }
         private void LimpiarFormulario()
@@ -120,6 +118,8 @@ namespace Heladeria
             dtpFecha.Value = DateTime.Now;
             lblNumerodeFactura.Text = ventaBLL.ObtenerSiguienteFactura().ToString();
             txtVendedor.Text = Sesion.Nombre_Completo;
+            txtPrecio.Clear();
+            txtStock.Clear();
 
         }
 
@@ -135,6 +135,7 @@ namespace Heladeria
                 txtStock.Text = producto.Stock.ToString();
                 txtPrecio.Text = producto.Precio_Base.ToString();
             }
+            
         }
 
         private void iconButton3_Click(object sender, EventArgs e)

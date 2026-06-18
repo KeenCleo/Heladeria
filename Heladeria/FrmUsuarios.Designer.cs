@@ -43,33 +43,28 @@
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
             iconButton12 = new FontAwesome.Sharp.IconButton();
-            textBox7 = new TextBox();
+            txtBuscar = new TextBox();
             groupBox2 = new GroupBox();
-            dgvUltimasVentas = new DataGridView();
-            colID = new DataGridViewTextBoxColumn();
-            colNombre = new DataGridViewTextBoxColumn();
-            colUsuario = new DataGridViewTextBoxColumn();
-            colRol = new DataGridViewTextBoxColumn();
-            colEstado = new DataGridViewTextBoxColumn();
+            dgvUsuarios = new DataGridView();
             groupBox1 = new GroupBox();
-            comboBox2 = new ComboBox();
-            comboBox1 = new ComboBox();
-            textBox6 = new TextBox();
+            cmbEstado = new ComboBox();
+            cmbCargo = new ComboBox();
+            txtContraseña = new TextBox();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
             iconButton11 = new FontAwesome.Sharp.IconButton();
             iconButton8 = new FontAwesome.Sharp.IconButton();
             iconButton5 = new FontAwesome.Sharp.IconButton();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
+            txtNombreUsuario = new TextBox();
+            txtNombreCompleto = new TextBox();
             label2 = new Label();
             label1 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvUltimasVentas).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvUsuarios).BeginInit();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -86,7 +81,7 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(250, 630);
+            panel1.Size = new Size(250, 729);
             panel1.TabIndex = 0;
             // 
             // iconButton10
@@ -248,13 +243,13 @@
             // 
             panel2.BackColor = Color.FromArgb(253, 253, 253);
             panel2.Controls.Add(iconButton12);
-            panel2.Controls.Add(textBox7);
+            panel2.Controls.Add(txtBuscar);
             panel2.Controls.Add(groupBox2);
             panel2.Controls.Add(groupBox1);
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(250, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1097, 630);
+            panel2.Size = new Size(1100, 729);
             panel2.TabIndex = 1;
             // 
             // iconButton12
@@ -274,19 +269,20 @@
             iconButton12.TabIndex = 31;
             iconButton12.Text = "Buscar";
             iconButton12.UseVisualStyleBackColor = false;
+            iconButton12.Click += iconButton12_Click;
             // 
-            // textBox7
+            // txtBuscar
             // 
-            textBox7.Font = new Font("Segoe UI Light", 12F);
-            textBox7.Location = new Point(724, 395);
-            textBox7.Name = "textBox7";
-            textBox7.PlaceholderText = " Buscar usuario...";
-            textBox7.Size = new Size(206, 29);
-            textBox7.TabIndex = 29;
+            txtBuscar.Font = new Font("Segoe UI Light", 12F);
+            txtBuscar.Location = new Point(724, 395);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.PlaceholderText = " Buscar usuario...";
+            txtBuscar.Size = new Size(206, 29);
+            txtBuscar.TabIndex = 29;
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(dgvUltimasVentas);
+            groupBox2.Controls.Add(dgvUsuarios);
             groupBox2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             groupBox2.Location = new Point(6, 417);
             groupBox2.Name = "groupBox2";
@@ -295,14 +291,14 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Lista de Usuarios";
             // 
-            // dgvUltimasVentas
+            // dgvUsuarios
             // 
-            dgvUltimasVentas.AllowUserToAddRows = false;
-            dgvUltimasVentas.AllowUserToDeleteRows = false;
+            dgvUsuarios.AllowUserToAddRows = false;
+            dgvUsuarios.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = Color.FromArgb(255, 248, 240);
-            dgvUltimasVentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dgvUltimasVentas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvUltimasVentas.BackgroundColor = Color.White;
+            dgvUsuarios.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dgvUsuarios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvUsuarios.BackgroundColor = Color.White;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(65, 36, 2);
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
@@ -310,9 +306,8 @@
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgvUltimasVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dgvUltimasVentas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUltimasVentas.Columns.AddRange(new DataGridViewColumn[] { colID, colNombre, colUsuario, colRol, colEstado });
+            dgvUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dgvUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.FromArgb(250, 238, 218);
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
@@ -320,79 +315,29 @@
             dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            dgvUltimasVentas.DefaultCellStyle = dataGridViewCellStyle3;
-            dgvUltimasVentas.Location = new Point(14, 28);
-            dgvUltimasVentas.Name = "dgvUltimasVentas";
-            dgvUltimasVentas.ReadOnly = true;
-            dgvUltimasVentas.RowHeadersVisible = false;
-            dgvUltimasVentas.RowHeadersWidth = 62;
-            dgvUltimasVentas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvUltimasVentas.Size = new Size(1062, 255);
-            dgvUltimasVentas.TabIndex = 28;
-            // 
-            // colID
-            // 
-            colID.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            colID.FillWeight = 203.045685F;
-            colID.HeaderText = "ID";
-            colID.MinimumWidth = 8;
-            colID.Name = "colID";
-            colID.ReadOnly = true;
-            colID.Width = 80;
-            // 
-            // colNombre
-            // 
-            colNombre.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            colNombre.FillWeight = 103.325485F;
-            colNombre.HeaderText = "Nombre";
-            colNombre.MinimumWidth = 8;
-            colNombre.Name = "colNombre";
-            colNombre.ReadOnly = true;
-            colNombre.Width = 300;
-            // 
-            // colUsuario
-            // 
-            colUsuario.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            colUsuario.FillWeight = 167.295044F;
-            colUsuario.HeaderText = "Nombre de Usuario";
-            colUsuario.MinimumWidth = 8;
-            colUsuario.Name = "colUsuario";
-            colUsuario.ReadOnly = true;
-            colUsuario.Width = 300;
-            // 
-            // colRol
-            // 
-            colRol.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
-            colRol.FillWeight = 18.00486F;
-            colRol.HeaderText = "Rol";
-            colRol.MinimumWidth = 8;
-            colRol.Name = "colRol";
-            colRol.ReadOnly = true;
-            colRol.Resizable = DataGridViewTriState.True;
-            colRol.Width = 60;
-            // 
-            // colEstado
-            // 
-            colEstado.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            colEstado.FillWeight = 8.328922F;
-            colEstado.HeaderText = "Estado";
-            colEstado.MinimumWidth = 8;
-            colEstado.Name = "colEstado";
-            colEstado.ReadOnly = true;
+            dgvUsuarios.DefaultCellStyle = dataGridViewCellStyle3;
+            dgvUsuarios.Location = new Point(14, 28);
+            dgvUsuarios.Name = "dgvUsuarios";
+            dgvUsuarios.ReadOnly = true;
+            dgvUsuarios.RowHeadersVisible = false;
+            dgvUsuarios.RowHeadersWidth = 62;
+            dgvUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvUsuarios.Size = new Size(1062, 255);
+            dgvUsuarios.TabIndex = 28;
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(comboBox2);
-            groupBox1.Controls.Add(comboBox1);
-            groupBox1.Controls.Add(textBox6);
+            groupBox1.Controls.Add(cmbEstado);
+            groupBox1.Controls.Add(cmbCargo);
+            groupBox1.Controls.Add(txtContraseña);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(iconButton11);
             groupBox1.Controls.Add(iconButton8);
             groupBox1.Controls.Add(iconButton5);
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(txtNombreUsuario);
+            groupBox1.Controls.Add(txtNombreCompleto);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
             groupBox1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
@@ -403,32 +348,33 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Datos del Usuario";
             // 
-            // comboBox2
+            // cmbEstado
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(81, 247);
-            comboBox2.Margin = new Padding(2);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(164, 29);
-            comboBox2.TabIndex = 32;
+            cmbEstado.FormattingEnabled = true;
+            cmbEstado.Items.AddRange(new object[] { "Activo", "Inactivo" });
+            cmbEstado.Location = new Point(81, 247);
+            cmbEstado.Margin = new Padding(2);
+            cmbEstado.Name = "cmbEstado";
+            cmbEstado.Size = new Size(164, 29);
+            cmbEstado.TabIndex = 32;
             // 
-            // comboBox1
+            // cmbCargo
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(81, 201);
-            comboBox1.Margin = new Padding(2);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(164, 29);
-            comboBox1.TabIndex = 31;
+            cmbCargo.FormattingEnabled = true;
+            cmbCargo.Location = new Point(81, 201);
+            cmbCargo.Margin = new Padding(2);
+            cmbCargo.Name = "cmbCargo";
+            cmbCargo.Size = new Size(164, 29);
+            cmbCargo.TabIndex = 31;
             // 
-            // textBox6
+            // txtContraseña
             // 
-            textBox6.Font = new Font("Segoe UI Light", 12F);
-            textBox6.Location = new Point(116, 157);
-            textBox6.Name = "textBox6";
-            textBox6.PlaceholderText = " Ingrese su contraseña...";
-            textBox6.Size = new Size(394, 29);
-            textBox6.TabIndex = 30;
+            txtContraseña.Font = new Font("Segoe UI Light", 12F);
+            txtContraseña.Location = new Point(116, 157);
+            txtContraseña.Name = "txtContraseña";
+            txtContraseña.PlaceholderText = " Ingrese su contraseña...";
+            txtContraseña.Size = new Size(394, 29);
+            txtContraseña.TabIndex = 30;
             // 
             // label3
             // 
@@ -477,6 +423,7 @@
             iconButton11.TabIndex = 26;
             iconButton11.Text = "Eliminar";
             iconButton11.UseVisualStyleBackColor = false;
+            iconButton11.Click += iconButton11_Click;
             // 
             // iconButton8
             // 
@@ -495,6 +442,7 @@
             iconButton8.TabIndex = 25;
             iconButton8.Text = "Editar";
             iconButton8.UseVisualStyleBackColor = false;
+            iconButton8.Click += iconButton8_Click;
             // 
             // iconButton5
             // 
@@ -513,24 +461,25 @@
             iconButton5.TabIndex = 24;
             iconButton5.Text = "Guardar";
             iconButton5.UseVisualStyleBackColor = false;
+            iconButton5.Click += iconButton5_Click;
             // 
-            // textBox3
+            // txtNombreUsuario
             // 
-            textBox3.Font = new Font("Segoe UI Light", 12F);
-            textBox3.Location = new Point(183, 106);
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = " Ingrese su usuario...";
-            textBox3.Size = new Size(394, 29);
-            textBox3.TabIndex = 19;
+            txtNombreUsuario.Font = new Font("Segoe UI Light", 12F);
+            txtNombreUsuario.Location = new Point(183, 106);
+            txtNombreUsuario.Name = "txtNombreUsuario";
+            txtNombreUsuario.PlaceholderText = " Ingrese su usuario...";
+            txtNombreUsuario.Size = new Size(394, 29);
+            txtNombreUsuario.TabIndex = 19;
             // 
-            // textBox2
+            // txtNombreCompleto
             // 
-            textBox2.Font = new Font("Segoe UI Light", 12F);
-            textBox2.Location = new Point(183, 52);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = " Ingrese su nombre completo...";
-            textBox2.Size = new Size(394, 29);
-            textBox2.TabIndex = 18;
+            txtNombreCompleto.Font = new Font("Segoe UI Light", 12F);
+            txtNombreCompleto.Location = new Point(183, 52);
+            txtNombreCompleto.Name = "txtNombreCompleto";
+            txtNombreCompleto.PlaceholderText = " Ingrese su nombre completo...";
+            txtNombreCompleto.Size = new Size(394, 29);
+            txtNombreCompleto.TabIndex = 18;
             // 
             // label2
             // 
@@ -556,19 +505,20 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1347, 630);
+            ClientSize = new Size(1350, 729);
             Controls.Add(panel2);
             Controls.Add(panel1);
             MaximizeBox = false;
             Name = "FrmUsuarios";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmUsuarios";
+            Load += FrmUsuarios_Load;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dgvUltimasVentas).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvUsuarios).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
@@ -579,20 +529,20 @@
         private Panel panel1;
         private Panel panel2;
         private GroupBox groupBox1;
-        private TextBox textBox6;
+        private TextBox txtContraseña;
         private Label label3;
         private Label label4;
         private Label label5;
         private FontAwesome.Sharp.IconButton iconButton11;
         private FontAwesome.Sharp.IconButton iconButton8;
         private FontAwesome.Sharp.IconButton iconButton5;
-        private TextBox textBox3;
-        private TextBox textBox2;
+        private TextBox txtNombreUsuario;
+        private TextBox txtNombreCompleto;
         private Label label2;
         private Label label1;
-        private TextBox textBox7;
+        private TextBox txtBuscar;
         private GroupBox groupBox2;
-        private DataGridView dgvUltimasVentas;
+        private DataGridView dgvUsuarios;
         private FontAwesome.Sharp.IconButton iconButton10;
         private FontAwesome.Sharp.IconButton iconButton9;
         private FontAwesome.Sharp.IconButton iconButton7;
@@ -601,13 +551,8 @@
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton1;
         private PictureBox pictureBox1;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
+        private ComboBox cmbEstado;
+        private ComboBox cmbCargo;
         private FontAwesome.Sharp.IconButton iconButton12;
-        private DataGridViewTextBoxColumn colID;
-        private DataGridViewTextBoxColumn colNombre;
-        private DataGridViewTextBoxColumn colUsuario;
-        private DataGridViewTextBoxColumn colRol;
-        private DataGridViewTextBoxColumn colEstado;
     }
 }

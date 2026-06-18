@@ -75,7 +75,7 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(250, 765);
+            panel1.Size = new Size(250, 729);
             panel1.TabIndex = 0;
             // 
             // iconButton10
@@ -447,12 +447,13 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1365, 765);
+            ClientSize = new Size(1350, 729);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(panel1);
             MaximizeBox = false;
             Name = "FrmClientes";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmClientes";
             Load += FrmClientes_Load;
             panel1.ResumeLayout(false);

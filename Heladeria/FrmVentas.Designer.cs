@@ -105,7 +105,7 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(250, 734);
+            panel1.Size = new Size(250, 729);
             panel1.TabIndex = 0;
             // 
             // btn_Salir_FrmPrincipal
@@ -426,9 +426,9 @@
             iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton4.IconSize = 30;
             iconButton4.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton4.Location = new Point(595, 56);
+            iconButton4.Location = new Point(595, 54);
             iconButton4.Name = "iconButton4";
-            iconButton4.Size = new Size(240, 28);
+            iconButton4.Size = new Size(240, 30);
             iconButton4.TabIndex = 32;
             iconButton4.Text = "Agregar nuevo producto";
             iconButton4.UseVisualStyleBackColor = false;
@@ -464,7 +464,7 @@
             cmbProducto.Name = "cmbProducto";
             cmbProducto.Size = new Size(157, 28);
             cmbProducto.TabIndex = 14;
-            cmbProducto.SelectedIndexChanged += cmbProducto_SelectedIndexChanged;
+            cmbProducto.SelectionChangeCommitted += cmbProducto_SelectedIndexChanged;
             // 
             // label10
             // 
@@ -760,7 +760,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(253, 253, 253);
-            ClientSize = new Size(1347, 734);
+            ClientSize = new Size(1350, 729);
             Controls.Add(groupBox4);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
