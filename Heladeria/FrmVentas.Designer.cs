@@ -594,6 +594,7 @@
             dgvVentas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvVentas.Size = new Size(871, 305);
             dgvVentas.TabIndex = 16;
+            dgvVentas.CellContentClick += dgvVentas_CellContentClick;
             // 
             // colFactura
             // 

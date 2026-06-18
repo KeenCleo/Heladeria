@@ -20,6 +20,15 @@ namespace Heladeria
         {
             InitializeComponent();
         }
+        private void CargarVentasMes()
+        {
+            VentasBLL bll = new VentasBLL();
+            dgvVentas.DataSource = bll.VentasDelMes();
+        }
+        private void btnGuardarVenta_Click(object sender, EventArgs e)
+        {
+
+        }
         private void CargarClientes()
         {
             cmbCliente.DataSource =
@@ -34,14 +43,15 @@ namespace Heladeria
             productos =
             ventaBLL.CargarProductos();
 
-            cmbProducto.DataSource =
-            productos;
+            cmbProducto.DataSource = null;
+            
 
             cmbProducto.DisplayMember =
             "Nombre_Producto";
 
             cmbProducto.ValueMember =
             "ID_Producto";
+            cmbProducto.SelectedIndex = -1;
         }
         private void LimpiarFormulario()
         {
@@ -115,26 +125,15 @@ namespace Heladeria
 
         private void cmbProducto_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbProducto.SelectedValue != null)
+            if (cmbProducto.SelectedValue != null &&
+     cmbProducto.SelectedValue.ToString() != "System.Data.DataRowView")
             {
-                try
-                {
-                    int idProducto =
-                    Convert.ToInt32(cmbProducto.SelectedValue);
+                int idProducto = Convert.ToInt32(cmbProducto.SelectedValue);
 
-                    Producto producto =
-                    ventaBLL.ObtenerProductoPorId(idProducto);
+                Producto producto = ventaBLL.ObtenerProductoPorId(idProducto);
 
-                    txtStock.Text =
-                    producto.Stock.ToString();
-
-                    txtPrecio.Text =
-                    producto.Precio_Base.ToString();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                txtStock.Text = producto.Stock.ToString();
+                txtPrecio.Text = producto.Precio_Base.ToString();
             }
         }
 
@@ -203,10 +202,19 @@ namespace Heladeria
                     detalle.Cantidad);
             }
 
-            MessageBox.Show(
-                "Venta guardada correctamente");
+            MessageBox.Show("Venta guardada correctamente");
 
+
+            FrmMenuPrincipal frm = Application.OpenForms["FrmMenuPrincipal"] as FrmMenuPrincipal;
+
+            if (frm != null)
+            {
+                frm.CargarDashboard();
+            }
+
+            CargarVentasMes();
             LimpiarFormulario();
+
         }
 
         private void txtDineroRecibido_TextChanged(object sender, EventArgs e)
@@ -251,8 +259,13 @@ namespace Heladeria
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
-            FrmProductos frm= new FrmProductos();
+            FrmProductos frm = new FrmProductos();
             frm.ShowDialog();
+        }
+
+        private void dgvVentas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 

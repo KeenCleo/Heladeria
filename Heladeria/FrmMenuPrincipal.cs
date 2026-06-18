@@ -1,4 +1,6 @@
-﻿using Heladeria.Entidades;
+﻿using Heladeria.BLL;
+using Heladeria.DAL;
+using Heladeria.Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +18,41 @@ namespace Heladeria
             InitializeComponent();
         }
 
+        public void CargarDash()
+        {
+            VentasBLL ventaBLL = new VentasBLL();
+            ProductosBLL productoBLL = new ProductosBLL();
+            ClienteBLL clienteBLL = new ClienteBLL();
+
+            lblVentasHoy.Text = ventaBLL.VentasHoy().ToString();
+            lblDineroHoy.Text = ventaBLL.TotalDineroHoy().ToString();
+            dgvVentasDelMes.DataSource = ventaBLL.VentasDelMes();
+
+            DataTable dt = productoBLL.ProductoMasVendido();
+
+            if (dt.Rows.Count > 0)
+            {
+                lblProductoTop.Text = dt.Rows[0]["Nombre_Producto"].ToString();
+
+            }
+            lblClientes.Text = clienteBLL.TotalClientes().ToString();
+            lblStock.Text = productoBLL.TotalStock().ToString();
+
+        }
+        public void CargarDashboard()
+        {
+            VentasBLL ventaBLL = new VentasBLL();
+            ClienteBLL clienteBLL = new ClienteBLL();
+            ProductosBLL productoBLL = new ProductosBLL();
+
+            lblVentasHoy.Text = ventaBLL.VentasHoy().ToString();
+            lblDineroHoy.Text = ventaBLL.TotalDineroHoy().ToString("0.00");
+            lblClientes.Text = clienteBLL.TotalClientes().ToString();
+            lblStock.Text = productoBLL.TotalStock().ToString();
+
+            dgvVentasDelMes.DataSource = ventaBLL.VentasDelMes();
+        }
+
         private void chart1_Click(object sender, EventArgs e)
         {
 
@@ -29,7 +66,11 @@ namespace Heladeria
         private void FrmMenuPrincipal_Load(object sender, EventArgs e)
         {
             timer1.Start();
-            lbl_BienvenidoUsuario.Text=Sesion.Nombre_Completo.ToString();
+            lbl_BienvenidoUsuario.Text = Sesion.Nombre_Completo.ToString();
+
+            CargarDash();
+            CargarDashboard();
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -42,7 +83,7 @@ namespace Heladeria
 
         private void label14_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void btn_Salir_FrmPrincipal_Click(object sender, EventArgs e)
@@ -60,14 +101,14 @@ namespace Heladeria
         {
             FrmVentas frm = new FrmVentas();
             frm.ShowDialog();
-           
+
         }
 
         private void btn_irProducto_frmPrincipal_Click(object sender, EventArgs e)
         {
             FrmProductos frm = new FrmProductos();
             frm.ShowDialog();
-            
+
 
         }
 
@@ -75,21 +116,26 @@ namespace Heladeria
         {
             FrmClientes frm = new FrmClientes();
             frm.ShowDialog();
-            
+
         }
 
         private void btn_IrInventario_frmPrincipal_Click(object sender, EventArgs e)
         {
             FrmInventarios frm = new FrmInventarios();
             frm.ShowDialog();
-            
+
         }
 
         private void btn_IrUsuarios_frmPrincipal_Click(object sender, EventArgs e)
         {
             FrmUsuarios frm = new FrmUsuarios();
             frm.ShowDialog();
-            
+
+        }
+
+        private void lblProductoTop_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

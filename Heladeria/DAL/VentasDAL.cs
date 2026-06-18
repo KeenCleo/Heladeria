@@ -109,7 +109,7 @@ namespace Heladeria.DAL
 
             cmd.CommandText = "INSERT INTO Venta(Fecha, Total,Metodo_Pago, ID_Cliente, ID_Usuario) VALUES (@Fecha, @Total, @MetodoPago, @IDCliente, @IDUsuario); SELECT SCOPE_IDENTITY();";
 
-            cmd.Parameters.AddWithValue("@Fecha", venta.Fecha);
+            cmd.Parameters.AddWithValue("@Fecha", DateTime.Now);
 
             cmd.Parameters.AddWithValue("@Total", venta.Total);
 
@@ -168,6 +168,46 @@ namespace Heladeria.DAL
             con.CerrarConexion();
         }
 
+        public int VentasHoy()
+        {
+            Conexion con = new Conexion();
+
+            SqlCommand cmd = new SqlCommand(" SELECT COUNT(*)  FROM Venta  WHERE CAST(Fecha AS DATE) = CAST(GETDATE() AS DATE)",con.AbrirConexion());
+
+            int total = Convert.ToInt32(cmd.ExecuteScalar());
+
+            con.CerrarConexion();
+            return total;
+        }
+
+        public decimal TotalDineroHoy()
+        {
+            Conexion con = new Conexion();
+
+            SqlCommand cmd = new SqlCommand(@"SELECT ISNULL(SUM(Total),0) FROM Venta WHERE CAST(Fecha AS DATE) = CAST(GETDATE() AS DATE) ", con.AbrirConexion());
+
+            decimal total = Convert.ToDecimal(cmd.ExecuteScalar());
+
+            con.CerrarConexion();
+            return total;
+        }
+
+        public DataTable VentasDelMes()
+        {
+            Conexion con = new Conexion();
+
+            SqlDataAdapter da = new SqlDataAdapter(@" SELECT  ID_Venta, Fecha, ID_Cliente,Metodo_Pago, Total FROM Venta WHERE MONTH(Fecha) = MONTH(GETDATE()) AND YEAR(Fecha) = YEAR(GETDATE())", con.AbrirConexion());
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con.CerrarConexion();
+            return dt;
+        }
+
+
+
+    }
+
         /*public DataTable MostrarVentas(string numerofactura)
         {
 
@@ -176,5 +216,5 @@ namespace Heladeria.DAL
         {
 
         }*/
-    }
+    
 }

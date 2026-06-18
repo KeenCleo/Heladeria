@@ -86,12 +86,7 @@ namespace Heladeria.DAL
         {
             Conexion con = new Conexion();
 
-            SqlDataAdapter da = new SqlDataAdapter(@"
-        SELECT 
-            Nombre_Producto,
-            Stock
-        FROM Producto
-    ", con.AbrirConexion());
+            SqlDataAdapter da = new SqlDataAdapter(" SELECT  Nombre_Producto, Stock FROM Producto ", con.AbrirConexion());
 
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -100,6 +95,32 @@ namespace Heladeria.DAL
 
             return dt;
         }
+
+        public DataTable ProductoMasVendido()
+        {
+            Conexion con = new Conexion();
+
+            SqlDataAdapter da = new SqlDataAdapter("SELECT TOP 1 p.ID_Producto,p.Nombre_Producto,SUM(dv.Cantidad) AS Sub_Total FROM Detalle_Venta dv JOIN Producto p ON dv.ID_Producto = p.ID_Producto GROUP BY p.ID_Producto, p.Nombre_Producto ORDER BY SUM(dv.Cantidad) DESC;", con.AbrirConexion());
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            con.CerrarConexion();
+            return dt;
+        }
+        public int TotalStock()
+        {
+            Conexion con = new Conexion();
+
+            SqlCommand cmd = new SqlCommand(@"SELECT ISNULL(SUM(Stock),0)FROM Producto", con.AbrirConexion());
+
+            int total = Convert.ToInt32(cmd.ExecuteScalar());
+
+            con.CerrarConexion();
+            return total;
+        }
+
+
 
 
     }

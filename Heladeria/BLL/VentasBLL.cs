@@ -61,22 +61,26 @@ namespace Heladeria.BLL
            ventaDAL.ActualizarStock(idProducto, cantidad);
         }
 
-
-      /*  public DataTable MostrarVentas()
+        public int VentasHoy()
         {
-
+            VentasDAL ventaDAL = new VentasDAL();
+            return ventaDAL.VentasHoy();
         }
 
-
-        public DataTable BuscarVenta(string numeroFactura)
+        public decimal TotalDineroHoy()
         {
-
+            VentasDAL ventaDAL = new VentasDAL();
+            return ventaDAL.TotalDineroHoy();
         }
 
-
-        public DataTable MostrarUltimasVentas()
+        public DataTable VentasDelMes()
         {
+            VentasDAL ventaDAL = new VentasDAL();
+            return ventaDAL.VentasDelMes();
+        }
 
-        }*/
+        
+
+
     }
 }

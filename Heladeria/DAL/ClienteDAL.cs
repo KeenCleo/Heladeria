@@ -108,5 +108,16 @@ namespace Heladeria.DAL
             return tabla;
 
         }
+        public int TotalClientes()
+        {
+            Conexion con = new Conexion();
+
+            SqlCommand cmd = new SqlCommand(@" SELECT COUNT(*) FROM Cliente", con.AbrirConexion());
+
+            int total = Convert.ToInt32(cmd.ExecuteScalar());
+
+            con.CerrarConexion();
+            return total;
+        }
     }
 }

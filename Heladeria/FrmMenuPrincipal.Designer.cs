@@ -43,28 +43,23 @@
             iconButton1 = new FontAwesome.Sharp.IconButton();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
-            label2 = new Label();
+            lblVentasHoy = new Label();
             label1 = new Label();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             panel3 = new Panel();
-            label3 = new Label();
+            lblProductoTop = new Label();
             iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             label5 = new Label();
             panel4 = new Panel();
-            label6 = new Label();
+            lblClientes = new Label();
             iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             label7 = new Label();
             panel5 = new Panel();
-            label8 = new Label();
+            lblStock = new Label();
             iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
             label9 = new Label();
             panel6 = new Panel();
-            dgvUltimasVentas = new DataGridView();
-            colIDVenta = new DataGridViewTextBoxColumn();
-            colFecha = new DataGridViewTextBoxColumn();
-            colCliente = new DataGridViewTextBoxColumn();
-            colMetodo = new DataGridViewTextBoxColumn();
-            colTotal = new DataGridViewTextBoxColumn();
+            dgvVentasDelMes = new DataGridView();
             label4 = new Label();
             label11 = new Label();
             label12 = new Label();
@@ -73,6 +68,9 @@
             lbl_Hora_MenuPrincipal = new Label();
             lbl_BienvenidoUsuario = new Label();
             label10 = new Label();
+            lblDineroHoy = new Label();
+            label3 = new Label();
+            iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -84,7 +82,8 @@
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox4).BeginInit();
             panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvUltimasVentas).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvVentasDelMes).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox5).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -267,7 +266,7 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(label2);
+            panel2.Controls.Add(lblVentasHoy);
             panel2.Controls.Add(label1);
             panel2.Controls.Add(iconPictureBox1);
             panel2.Location = new Point(269, 85);
@@ -275,16 +274,16 @@
             panel2.Size = new Size(180, 150);
             panel2.TabIndex = 1;
             // 
-            // label2
+            // lblVentasHoy
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label2.ForeColor = Color.FromArgb(38, 150, 76);
-            label2.Location = new Point(15, 106);
-            label2.Name = "label2";
-            label2.Size = new Size(141, 32);
-            label2.TabIndex = 7;
-            label2.Text = "C$1,200.00";
+            lblVentasHoy.AutoSize = true;
+            lblVentasHoy.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            lblVentasHoy.ForeColor = Color.FromArgb(38, 150, 76);
+            lblVentasHoy.Location = new Point(60, 118);
+            lblVentasHoy.Name = "lblVentasHoy";
+            lblVentasHoy.Size = new Size(28, 32);
+            lblVentasHoy.TabIndex = 7;
+            lblVentasHoy.Text = "0";
             // 
             // label1
             // 
@@ -312,7 +311,7 @@
             // 
             // panel3
             // 
-            panel3.Controls.Add(label3);
+            panel3.Controls.Add(lblProductoTop);
             panel3.Controls.Add(iconPictureBox2);
             panel3.Controls.Add(label5);
             panel3.Location = new Point(455, 85);
@@ -320,15 +319,16 @@
             panel3.Size = new Size(180, 150);
             panel3.TabIndex = 2;
             // 
-            // label3
+            // lblProductoTop
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label3.Location = new Point(72, 106);
-            label3.Name = "label3";
-            label3.Size = new Size(42, 32);
-            label3.TabIndex = 10;
-            label3.Text = "45";
+            lblProductoTop.AutoSize = true;
+            lblProductoTop.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            lblProductoTop.Location = new Point(37, 119);
+            lblProductoTop.Name = "lblProductoTop";
+            lblProductoTop.Size = new Size(42, 32);
+            lblProductoTop.TabIndex = 10;
+            lblProductoTop.Text = "45";
+            lblProductoTop.Click += lblProductoTop_Click;
             // 
             // iconPictureBox2
             // 
@@ -348,15 +348,15 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label5.Location = new Point(49, 85);
+            label5.Location = new Point(3, 85);
             label5.Name = "label5";
-            label5.Size = new Size(87, 21);
+            label5.Size = new Size(178, 21);
             label5.TabIndex = 9;
-            label5.Text = "Productos";
+            label5.Text = "Productomas vendido";
             // 
             // panel4
             // 
-            panel4.Controls.Add(label6);
+            panel4.Controls.Add(lblClientes);
             panel4.Controls.Add(iconPictureBox3);
             panel4.Controls.Add(label7);
             panel4.Location = new Point(641, 85);
@@ -364,15 +364,15 @@
             panel4.Size = new Size(180, 150);
             panel4.TabIndex = 3;
             // 
-            // label6
+            // lblClientes
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label6.Location = new Point(70, 106);
-            label6.Name = "label6";
-            label6.Size = new Size(42, 32);
-            label6.TabIndex = 13;
-            label6.Text = "12";
+            lblClientes.AutoSize = true;
+            lblClientes.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            lblClientes.Location = new Point(70, 118);
+            lblClientes.Name = "lblClientes";
+            lblClientes.Size = new Size(42, 32);
+            lblClientes.TabIndex = 13;
+            lblClientes.Text = "12";
             // 
             // iconPictureBox3
             // 
@@ -393,13 +393,13 @@
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label7.Location = new Point(61, 85);
             label7.Name = "label7";
-            label7.Size = new Size(65, 21);
+            label7.Size = new Size(71, 21);
             label7.TabIndex = 12;
             label7.Text = "Clientes";
             // 
             // panel5
             // 
-            panel5.Controls.Add(label8);
+            panel5.Controls.Add(lblStock);
             panel5.Controls.Add(iconPictureBox4);
             panel5.Controls.Add(label9);
             panel5.Location = new Point(827, 85);
@@ -407,16 +407,16 @@
             panel5.Size = new Size(180, 150);
             panel5.TabIndex = 3;
             // 
-            // label8
+            // lblStock
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label8.ForeColor = Color.FromArgb(225, 64, 54);
-            label8.Location = new Point(21, 106);
-            label8.Name = "label8";
-            label8.Size = new Size(141, 32);
-            label8.TabIndex = 16;
-            label8.Text = "C$1,200.00";
+            lblStock.AutoSize = true;
+            lblStock.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            lblStock.ForeColor = Color.FromArgb(225, 64, 54);
+            lblStock.Location = new Point(66, 119);
+            lblStock.Name = "lblStock";
+            lblStock.Size = new Size(28, 32);
+            lblStock.TabIndex = 16;
+            lblStock.Text = "0";
             // 
             // iconPictureBox4
             // 
@@ -443,21 +443,21 @@
             // 
             // panel6
             // 
-            panel6.Controls.Add(dgvUltimasVentas);
+            panel6.Controls.Add(dgvVentasDelMes);
             panel6.Controls.Add(label4);
             panel6.Location = new Point(269, 253);
             panel6.Name = "panel6";
             panel6.Size = new Size(1042, 403);
             panel6.TabIndex = 2;
             // 
-            // dgvUltimasVentas
+            // dgvVentasDelMes
             // 
-            dgvUltimasVentas.AllowUserToAddRows = false;
-            dgvUltimasVentas.AllowUserToDeleteRows = false;
+            dgvVentasDelMes.AllowUserToAddRows = false;
+            dgvVentasDelMes.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = Color.FromArgb(255, 248, 240);
-            dgvUltimasVentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dgvUltimasVentas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvUltimasVentas.BackgroundColor = Color.White;
+            dgvVentasDelMes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dgvVentasDelMes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvVentasDelMes.BackgroundColor = Color.White;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(65, 36, 2);
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
@@ -465,9 +465,8 @@
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgvUltimasVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dgvUltimasVentas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUltimasVentas.Columns.AddRange(new DataGridViewColumn[] { colIDVenta, colFecha, colCliente, colMetodo, colTotal });
+            dgvVentasDelMes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dgvVentasDelMes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.FromArgb(250, 238, 218);
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
@@ -475,65 +474,15 @@
             dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            dgvUltimasVentas.DefaultCellStyle = dataGridViewCellStyle3;
-            dgvUltimasVentas.Location = new Point(12, 43);
-            dgvUltimasVentas.Name = "dgvUltimasVentas";
-            dgvUltimasVentas.ReadOnly = true;
-            dgvUltimasVentas.RowHeadersVisible = false;
-            dgvUltimasVentas.RowHeadersWidth = 62;
-            dgvUltimasVentas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvUltimasVentas.Size = new Size(1027, 344);
-            dgvUltimasVentas.TabIndex = 7;
-            // 
-            // colIDVenta
-            // 
-            colIDVenta.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            colIDVenta.FillWeight = 203.045685F;
-            colIDVenta.HeaderText = "N° Venta";
-            colIDVenta.MinimumWidth = 8;
-            colIDVenta.Name = "colIDVenta";
-            colIDVenta.ReadOnly = true;
-            colIDVenta.Width = 200;
-            // 
-            // colFecha
-            // 
-            colFecha.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            colFecha.FillWeight = 103.325485F;
-            colFecha.HeaderText = "Fecha";
-            colFecha.MinimumWidth = 8;
-            colFecha.Name = "colFecha";
-            colFecha.ReadOnly = true;
-            colFecha.Width = 200;
-            // 
-            // colCliente
-            // 
-            colCliente.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            colCliente.FillWeight = 167.295044F;
-            colCliente.HeaderText = "Cliente";
-            colCliente.MinimumWidth = 8;
-            colCliente.Name = "colCliente";
-            colCliente.ReadOnly = true;
-            colCliente.Width = 300;
-            // 
-            // colMetodo
-            // 
-            colMetodo.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            colMetodo.FillWeight = 18.00486F;
-            colMetodo.HeaderText = "Método Pago";
-            colMetodo.MinimumWidth = 8;
-            colMetodo.Name = "colMetodo";
-            colMetodo.ReadOnly = true;
-            colMetodo.Width = 250;
-            // 
-            // colTotal
-            // 
-            colTotal.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            colTotal.FillWeight = 8.328922F;
-            colTotal.HeaderText = "Total";
-            colTotal.MinimumWidth = 8;
-            colTotal.Name = "colTotal";
-            colTotal.ReadOnly = true;
-            colTotal.Width = 250;
+            dgvVentasDelMes.DefaultCellStyle = dataGridViewCellStyle3;
+            dgvVentasDelMes.Location = new Point(12, 43);
+            dgvVentasDelMes.Name = "dgvVentasDelMes";
+            dgvVentasDelMes.ReadOnly = true;
+            dgvVentasDelMes.RowHeadersVisible = false;
+            dgvVentasDelMes.RowHeadersWidth = 62;
+            dgvVentasDelMes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvVentasDelMes.Size = new Size(1027, 344);
+            dgvVentasDelMes.TabIndex = 7;
             // 
             // label4
             // 
@@ -614,14 +563,52 @@
             label10.TabIndex = 18;
             label10.Text = " Bienvenido ";
             // 
+            // lblDineroHoy
+            // 
+            lblDineroHoy.AutoSize = true;
+            lblDineroHoy.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            lblDineroHoy.ForeColor = Color.FromArgb(38, 150, 76);
+            lblDineroHoy.Location = new Point(1077, 203);
+            lblDineroHoy.Name = "lblDineroHoy";
+            lblDineroHoy.Size = new Size(57, 32);
+            lblDineroHoy.TabIndex = 10;
+            lblDineroHoy.Text = "C$0";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            label3.Location = new Point(1055, 170);
+            label3.Name = "label3";
+            label3.Size = new Size(120, 21);
+            label3.TabIndex = 9;
+            label3.Text = "Dinero de Hoy";
+            // 
+            // iconPictureBox5
+            // 
+            iconPictureBox5.BackColor = Color.FromArgb(253, 253, 253);
+            iconPictureBox5.ForeColor = Color.FromArgb(38, 150, 76);
+            iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.CartArrowDown;
+            iconPictureBox5.IconColor = Color.FromArgb(38, 150, 76);
+            iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconPictureBox5.IconSize = 55;
+            iconPictureBox5.Location = new Point(1077, 110);
+            iconPictureBox5.Name = "iconPictureBox5";
+            iconPictureBox5.Size = new Size(60, 55);
+            iconPictureBox5.TabIndex = 8;
+            iconPictureBox5.TabStop = false;
+            // 
             // FrmMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(253, 253, 253);
             ClientSize = new Size(1350, 729);
+            Controls.Add(lblDineroHoy);
             Controls.Add(label10);
+            Controls.Add(label3);
             Controls.Add(lbl_BienvenidoUsuario);
+            Controls.Add(iconPictureBox5);
             Controls.Add(lbl_Hora_MenuPrincipal);
             Controls.Add(lbl_Fecha_Menu_Principal);
             Controls.Add(label12);
@@ -653,7 +640,8 @@
             ((System.ComponentModel.ISupportInitialize)iconPictureBox4).EndInit();
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvUltimasVentas).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvVentasDelMes).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox5).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -668,21 +656,21 @@
         private Panel panel6;
         private Label label4;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private Label label2;
+        private Label lblVentasHoy;
         private Label label1;
-        private Label label3;
+        private Label lblProductoTop;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private Label label5;
-        private Label label6;
+        private Label lblClientes;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private Label label7;
-        private Label label8;
+        private Label lblStock;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
         private Label label9;
         private Label label11;
         private Label label12;
         private Label lbl_Fecha_Menu_Principal;
-        private DataGridView dgvUltimasVentas;
+        private DataGridView dgvVentasDelMes;
         private FontAwesome.Sharp.IconButton btn_Salir_FrmPrincipal;
         private FontAwesome.Sharp.IconButton btn_IrUsuarios_frmPrincipal;
         private FontAwesome.Sharp.IconButton btn_IrInventario_frmPrincipal;
@@ -695,11 +683,9 @@
         private Label lbl_Hora_MenuPrincipal;
         private Label label13;
         private Label lbl_BienvenidoUsuario;
-        private DataGridViewTextBoxColumn colIDVenta;
-        private DataGridViewTextBoxColumn colFecha;
-        private DataGridViewTextBoxColumn colCliente;
-        private DataGridViewTextBoxColumn colMetodo;
-        private DataGridViewTextBoxColumn colTotal;
         private Label label10;
+        private Label lblDineroHoy;
+        private Label label3;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
     }
 }

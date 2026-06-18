@@ -65,5 +65,17 @@ namespace Heladeria.BLL
             return dt;
         }
 
+        public DataTable ProductoMasVendido()
+        {
+            ProductosDAL dal = new ProductosDAL();
+            return dal.ProductoMasVendido();
+        }
+
+        public int TotalStock()
+        {
+            ProductosDAL dal = new ProductosDAL();
+            return dal.TotalStock();
+        }
+
     }
 }
