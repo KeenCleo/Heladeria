@@ -29,6 +29,7 @@ namespace Heladeria
         private void FrmMenuPrincipal_Load(object sender, EventArgs e)
         {
             timer1.Start();
+            lbl_BienvenidoUsuario.Text=Sesion.Nombre_Completo.ToString();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -41,7 +42,7 @@ namespace Heladeria
 
         private void label14_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void btn_Salir_FrmPrincipal_Click(object sender, EventArgs e)

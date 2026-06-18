@@ -43,16 +43,13 @@
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
             panel3 = new Panel();
-            dgvUltimasVentas = new DataGridView();
-            colProducto = new DataGridViewTextBoxColumn();
-            colStock = new DataGridViewTextBoxColumn();
-            ColStadoStock = new DataGridViewTextBoxColumn();
+            dgvInventario = new DataGridView();
             iconButton12 = new FontAwesome.Sharp.IconButton();
-            textBox6 = new TextBox();
+            txtBuscar = new TextBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvUltimasVentas).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvInventario).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -230,9 +227,9 @@
             // 
             panel2.BackColor = Color.FromArgb(253, 253, 253);
             panel2.Controls.Add(panel3);
-            panel2.Controls.Add(dgvUltimasVentas);
+            panel2.Controls.Add(dgvInventario);
             panel2.Controls.Add(iconButton12);
-            panel2.Controls.Add(textBox6);
+            panel2.Controls.Add(txtBuscar);
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(250, 0);
             panel2.Name = "panel2";
@@ -246,14 +243,14 @@
             panel3.Size = new Size(1060, 38);
             panel3.TabIndex = 32;
             // 
-            // dgvUltimasVentas
+            // dgvInventario
             // 
-            dgvUltimasVentas.AllowUserToAddRows = false;
-            dgvUltimasVentas.AllowUserToDeleteRows = false;
+            dgvInventario.AllowUserToAddRows = false;
+            dgvInventario.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = Color.FromArgb(255, 248, 240);
-            dgvUltimasVentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dgvUltimasVentas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvUltimasVentas.BackgroundColor = Color.White;
+            dgvInventario.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dgvInventario.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvInventario.BackgroundColor = Color.White;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(65, 36, 2);
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
@@ -261,9 +258,8 @@
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgvUltimasVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dgvUltimasVentas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUltimasVentas.Columns.AddRange(new DataGridViewColumn[] { colProducto, colStock, ColStadoStock });
+            dgvInventario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dgvInventario.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.FromArgb(250, 238, 218);
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
@@ -271,42 +267,15 @@
             dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            dgvUltimasVentas.DefaultCellStyle = dataGridViewCellStyle3;
-            dgvUltimasVentas.Location = new Point(28, 65);
-            dgvUltimasVentas.Name = "dgvUltimasVentas";
-            dgvUltimasVentas.ReadOnly = true;
-            dgvUltimasVentas.RowHeadersVisible = false;
-            dgvUltimasVentas.RowHeadersWidth = 62;
-            dgvUltimasVentas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvUltimasVentas.Size = new Size(1060, 515);
-            dgvUltimasVentas.TabIndex = 31;
-            // 
-            // colProducto
-            // 
-            colProducto.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            colProducto.FillWeight = 203.045685F;
-            colProducto.HeaderText = "Producto";
-            colProducto.MinimumWidth = 8;
-            colProducto.Name = "colProducto";
-            colProducto.ReadOnly = true;
-            colProducto.Width = 600;
-            // 
-            // colStock
-            // 
-            colStock.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            colStock.FillWeight = 167.295044F;
-            colStock.HeaderText = "Stock";
-            colStock.MinimumWidth = 8;
-            colStock.Name = "colStock";
-            colStock.ReadOnly = true;
-            colStock.Width = 500;
-            // 
-            // ColStadoStock
-            // 
-            ColStadoStock.HeaderText = "Estado del Stock";
-            ColStadoStock.MinimumWidth = 8;
-            ColStadoStock.Name = "ColStadoStock";
-            ColStadoStock.ReadOnly = true;
+            dgvInventario.DefaultCellStyle = dataGridViewCellStyle3;
+            dgvInventario.Location = new Point(28, 65);
+            dgvInventario.Name = "dgvInventario";
+            dgvInventario.ReadOnly = true;
+            dgvInventario.RowHeadersVisible = false;
+            dgvInventario.RowHeadersWidth = 62;
+            dgvInventario.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvInventario.Size = new Size(1060, 515);
+            dgvInventario.TabIndex = 31;
             // 
             // iconButton12
             // 
@@ -325,15 +294,16 @@
             iconButton12.TabIndex = 30;
             iconButton12.Text = "Buscar";
             iconButton12.UseVisualStyleBackColor = false;
+            iconButton12.Click += iconButton12_Click;
             // 
-            // textBox6
+            // txtBuscar
             // 
-            textBox6.Font = new Font("Segoe UI Light", 12F);
-            textBox6.Location = new Point(29, 30);
-            textBox6.Name = "textBox6";
-            textBox6.PlaceholderText = " Buscar producto...";
-            textBox6.Size = new Size(928, 29);
-            textBox6.TabIndex = 29;
+            txtBuscar.Font = new Font("Segoe UI Light", 12F);
+            txtBuscar.Location = new Point(29, 30);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.PlaceholderText = " Buscar producto...";
+            txtBuscar.Size = new Size(928, 29);
+            txtBuscar.TabIndex = 29;
             // 
             // FrmInventarios
             // 
@@ -345,11 +315,12 @@
             MaximizeBox = false;
             Name = "FrmInventarios";
             Text = "Inventario";
+            Load += FrmInventarios_Load;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvUltimasVentas).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvInventario).EndInit();
             ResumeLayout(false);
         }
 
@@ -357,9 +328,9 @@
 
         private Panel panel1;
         private Panel panel2;
-        private TextBox textBox6;
+        private TextBox txtBuscar;
         private FontAwesome.Sharp.IconButton iconButton12;
-        private DataGridView dgvUltimasVentas;
+        private DataGridView dgvInventario;
         private Panel panel3;
         private FontAwesome.Sharp.IconButton iconButton10;
         private FontAwesome.Sharp.IconButton iconButton9;
@@ -369,8 +340,5 @@
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton1;
         private PictureBox pictureBox1;
-        private DataGridViewTextBoxColumn colProducto;
-        private DataGridViewTextBoxColumn colStock;
-        private DataGridViewTextBoxColumn ColStadoStock;
     }
 }

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUsuarios));
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             panel1 = new Panel();
             iconButton10 = new FontAwesome.Sharp.IconButton();
             iconButton9 = new FontAwesome.Sharp.IconButton();
@@ -42,9 +42,9 @@
             iconButton1 = new FontAwesome.Sharp.IconButton();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
-            groupBox2 = new GroupBox();
-            textBox7 = new TextBox();
             iconButton12 = new FontAwesome.Sharp.IconButton();
+            textBox7 = new TextBox();
+            groupBox2 = new GroupBox();
             dgvUltimasVentas = new DataGridView();
             colID = new DataGridViewTextBoxColumn();
             colNombre = new DataGridViewTextBoxColumn();
@@ -61,7 +61,6 @@
             iconButton11 = new FontAwesome.Sharp.IconButton();
             iconButton8 = new FontAwesome.Sharp.IconButton();
             iconButton5 = new FontAwesome.Sharp.IconButton();
-            iconButton4 = new FontAwesome.Sharp.IconButton();
             textBox3 = new TextBox();
             textBox2 = new TextBox();
             label2 = new Label();
@@ -258,26 +257,6 @@
             panel2.Size = new Size(1097, 630);
             panel2.TabIndex = 1;
             // 
-            // groupBox2
-            // 
-            groupBox2.Controls.Add(dgvUltimasVentas);
-            groupBox2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            groupBox2.Location = new Point(6, 417);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(1082, 300);
-            groupBox2.TabIndex = 30;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Lista de Usuarios";
-            // 
-            // textBox7
-            // 
-            textBox7.Font = new Font("Segoe UI Light", 12F);
-            textBox7.Location = new Point(724, 395);
-            textBox7.Name = "textBox7";
-            textBox7.PlaceholderText = " Buscar usuario...";
-            textBox7.Size = new Size(206, 29);
-            textBox7.TabIndex = 29;
-            // 
             // iconButton12
             // 
             iconButton12.BackColor = Color.Gray;
@@ -296,32 +275,52 @@
             iconButton12.Text = "Buscar";
             iconButton12.UseVisualStyleBackColor = false;
             // 
+            // textBox7
+            // 
+            textBox7.Font = new Font("Segoe UI Light", 12F);
+            textBox7.Location = new Point(724, 395);
+            textBox7.Name = "textBox7";
+            textBox7.PlaceholderText = " Buscar usuario...";
+            textBox7.Size = new Size(206, 29);
+            textBox7.TabIndex = 29;
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(dgvUltimasVentas);
+            groupBox2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            groupBox2.Location = new Point(6, 417);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(1082, 300);
+            groupBox2.TabIndex = 30;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Lista de Usuarios";
+            // 
             // dgvUltimasVentas
             // 
             dgvUltimasVentas.AllowUserToAddRows = false;
             dgvUltimasVentas.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = Color.FromArgb(255, 248, 240);
-            dgvUltimasVentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(255, 248, 240);
+            dgvUltimasVentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dgvUltimasVentas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvUltimasVentas.BackgroundColor = Color.White;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = Color.FromArgb(65, 36, 2);
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
-            dgvUltimasVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(65, 36, 2);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgvUltimasVentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgvUltimasVentas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvUltimasVentas.Columns.AddRange(new DataGridViewColumn[] { colID, colNombre, colUsuario, colRol, colEstado });
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = Color.FromArgb(250, 238, 218);
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = Color.FromArgb(65, 36, 2);
-            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
-            dgvUltimasVentas.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(250, 238, 218);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(65, 36, 2);
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dgvUltimasVentas.DefaultCellStyle = dataGridViewCellStyle3;
             dgvUltimasVentas.Location = new Point(14, 28);
             dgvUltimasVentas.Name = "dgvUltimasVentas";
             dgvUltimasVentas.ReadOnly = true;
@@ -392,7 +391,6 @@
             groupBox1.Controls.Add(iconButton11);
             groupBox1.Controls.Add(iconButton8);
             groupBox1.Controls.Add(iconButton5);
-            groupBox1.Controls.Add(iconButton4);
             groupBox1.Controls.Add(textBox3);
             groupBox1.Controls.Add(textBox2);
             groupBox1.Controls.Add(label2);
@@ -409,7 +407,7 @@
             // 
             comboBox2.FormattingEnabled = true;
             comboBox2.Location = new Point(81, 247);
-            comboBox2.Margin = new Padding(2, 2, 2, 2);
+            comboBox2.Margin = new Padding(2);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(164, 29);
             comboBox2.TabIndex = 32;
@@ -418,7 +416,7 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Location = new Point(81, 201);
-            comboBox1.Margin = new Padding(2, 2, 2, 2);
+            comboBox1.Margin = new Padding(2);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(164, 29);
             comboBox1.TabIndex = 31;
@@ -473,7 +471,7 @@
             iconButton11.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton11.IconSize = 30;
             iconButton11.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton11.Location = new Point(461, 301);
+            iconButton11.Location = new Point(303, 308);
             iconButton11.Name = "iconButton11";
             iconButton11.Size = new Size(125, 50);
             iconButton11.TabIndex = 26;
@@ -491,7 +489,7 @@
             iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton8.IconSize = 30;
             iconButton8.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton8.Location = new Point(316, 301);
+            iconButton8.Location = new Point(158, 308);
             iconButton8.Name = "iconButton8";
             iconButton8.Size = new Size(125, 50);
             iconButton8.TabIndex = 25;
@@ -509,30 +507,12 @@
             iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton5.IconSize = 30;
             iconButton5.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton5.Location = new Point(166, 301);
+            iconButton5.Location = new Point(8, 308);
             iconButton5.Name = "iconButton5";
             iconButton5.Size = new Size(125, 50);
             iconButton5.TabIndex = 24;
             iconButton5.Text = "Guardar";
             iconButton5.UseVisualStyleBackColor = false;
-            // 
-            // iconButton4
-            // 
-            iconButton4.BackColor = Color.FromArgb(48, 161, 73);
-            iconButton4.FlatStyle = FlatStyle.Flat;
-            iconButton4.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            iconButton4.ForeColor = Color.White;
-            iconButton4.IconChar = FontAwesome.Sharp.IconChar.Add;
-            iconButton4.IconColor = Color.White;
-            iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton4.IconSize = 30;
-            iconButton4.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton4.Location = new Point(18, 301);
-            iconButton4.Name = "iconButton4";
-            iconButton4.Size = new Size(125, 50);
-            iconButton4.TabIndex = 12;
-            iconButton4.Text = "Ingresar";
-            iconButton4.UseVisualStyleBackColor = false;
             // 
             // textBox3
             // 
@@ -606,7 +586,6 @@
         private FontAwesome.Sharp.IconButton iconButton11;
         private FontAwesome.Sharp.IconButton iconButton8;
         private FontAwesome.Sharp.IconButton iconButton5;
-        private FontAwesome.Sharp.IconButton iconButton4;
         private TextBox textBox3;
         private TextBox textBox2;
         private Label label2;

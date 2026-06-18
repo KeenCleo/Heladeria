@@ -66,14 +66,13 @@
             colMetodo = new DataGridViewTextBoxColumn();
             colTotal = new DataGridViewTextBoxColumn();
             label4 = new Label();
-            panel7 = new Panel();
-            listBox1 = new ListBox();
             label11 = new Label();
             label12 = new Label();
             lbl_Fecha_Menu_Principal = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
             lbl_Hora_MenuPrincipal = new Label();
             lbl_BienvenidoUsuario = new Label();
+            label10 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -86,7 +85,6 @@
             ((System.ComponentModel.ISupportInitialize)iconPictureBox4).BeginInit();
             panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvUltimasVentas).BeginInit();
-            panel7.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -449,7 +447,7 @@
             panel6.Controls.Add(label4);
             panel6.Location = new Point(269, 253);
             panel6.Name = "panel6";
-            panel6.Size = new Size(878, 403);
+            panel6.Size = new Size(1042, 403);
             panel6.TabIndex = 2;
             // 
             // dgvUltimasVentas
@@ -484,7 +482,7 @@
             dgvUltimasVentas.RowHeadersVisible = false;
             dgvUltimasVentas.RowHeadersWidth = 62;
             dgvUltimasVentas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvUltimasVentas.Size = new Size(852, 344);
+            dgvUltimasVentas.Size = new Size(1027, 344);
             dgvUltimasVentas.TabIndex = 7;
             // 
             // colIDVenta
@@ -543,25 +541,9 @@
             label4.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             label4.Location = new Point(12, 12);
             label4.Name = "label4";
-            label4.Size = new Size(212, 28);
+            label4.Size = new Size(159, 28);
             label4.TabIndex = 6;
-            label4.Text = "Ventas de la Semana:";
-            // 
-            // panel7
-            // 
-            panel7.Controls.Add(listBox1);
-            panel7.Location = new Point(1153, 253);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(180, 403);
-            panel7.TabIndex = 3;
-            // 
-            // listBox1
-            // 
-            listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(13, 12);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(152, 379);
-            listBox1.TabIndex = 0;
+            label4.Text = "Ventas del mes:";
             // 
             // label11
             // 
@@ -605,21 +587,32 @@
             lbl_Hora_MenuPrincipal.Location = new Point(1181, 55);
             lbl_Hora_MenuPrincipal.Margin = new Padding(2, 0, 2, 0);
             lbl_Hora_MenuPrincipal.Name = "lbl_Hora_MenuPrincipal";
-            lbl_Hora_MenuPrincipal.Size = new Size(66, 21);
+            lbl_Hora_MenuPrincipal.Size = new Size(14, 21);
             lbl_Hora_MenuPrincipal.TabIndex = 15;
-            lbl_Hora_MenuPrincipal.Text = "label13";
+            lbl_Hora_MenuPrincipal.Text = ".";
             // 
             // lbl_BienvenidoUsuario
             // 
             lbl_BienvenidoUsuario.AutoSize = true;
             lbl_BienvenidoUsuario.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_BienvenidoUsuario.Location = new Point(269, 37);
+            lbl_BienvenidoUsuario.Location = new Point(445, 46);
             lbl_BienvenidoUsuario.Margin = new Padding(2, 0, 2, 0);
             lbl_BienvenidoUsuario.Name = "lbl_BienvenidoUsuario";
-            lbl_BienvenidoUsuario.Size = new Size(172, 32);
+            lbl_BienvenidoUsuario.Size = new Size(21, 32);
             lbl_BienvenidoUsuario.TabIndex = 17;
-            lbl_BienvenidoUsuario.Text = "! Bienvenido ¡";
+            lbl_BienvenidoUsuario.Text = ".";
             lbl_BienvenidoUsuario.Click += label14_Click;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.Location = new Point(269, 44);
+            label10.Margin = new Padding(2, 0, 2, 0);
+            label10.Name = "label10";
+            label10.Size = new Size(156, 32);
+            label10.TabIndex = 18;
+            label10.Text = " Bienvenido ";
             // 
             // FrmMenuPrincipal
             // 
@@ -627,12 +620,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(253, 253, 253);
             ClientSize = new Size(1350, 729);
+            Controls.Add(label10);
             Controls.Add(lbl_BienvenidoUsuario);
             Controls.Add(lbl_Hora_MenuPrincipal);
             Controls.Add(lbl_Fecha_Menu_Principal);
             Controls.Add(label12);
             Controls.Add(label11);
-            Controls.Add(panel7);
             Controls.Add(panel6);
             Controls.Add(panel5);
             Controls.Add(panel4);
@@ -661,7 +654,6 @@
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvUltimasVentas).EndInit();
-            panel7.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -674,8 +666,6 @@
         private Panel panel4;
         private Panel panel5;
         private Panel panel6;
-        private Panel panel7;
-        private ListBox listBox1;
         private Label label4;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label label2;
@@ -710,5 +700,6 @@
         private DataGridViewTextBoxColumn colCliente;
         private DataGridViewTextBoxColumn colMetodo;
         private DataGridViewTextBoxColumn colTotal;
+        private Label label10;
     }
 }

@@ -24,6 +24,10 @@ namespace Heladeria.DAL
 
             if (reader.Read())
             {
+                Sesion.ID_Usuario = Convert.ToInt32(reader["ID_Usuario"]);
+
+                Sesion.Nombre_Completo =
+                reader["Nombre_Completo"].ToString();
                 return true;
             }
             else
