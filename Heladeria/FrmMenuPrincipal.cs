@@ -137,5 +137,10 @@ namespace Heladeria
         {
 
         }
+
+        private void lblDineroHoy_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

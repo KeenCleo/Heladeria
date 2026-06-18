@@ -33,7 +33,7 @@ namespace Heladeria
 
         }
 
-        
+
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
@@ -55,20 +55,53 @@ namespace Heladeria
 
         private void iconButton5_Click(object sender, EventArgs e)
         {
-            Producto producto = new Producto();
-            producto.Nombre_Producto = txtNombre.Text;
-            producto.Precio_Base = decimal.Parse(txtPrecio.Text);
-            producto.Stock = int.Parse(txtStock.Text);
-            producto.Fecha_Caducidad = dtpFecha.Value;
-            ProductosBLL productosBLL = new ProductosBLL();
+            try
+            {
+                if (string.IsNullOrWhiteSpace(txtNombre.Text))
+                {
+                    MessageBox.Show("El Nombre del producto es obligatorio ");
+                    return;
+                }
+                if (string.IsNullOrWhiteSpace(txtPrecio.Text))
+                {
+                    MessageBox.Show("El Precio del producto es obligatorio ");
+                    return;
+                }
 
-            productosBLL.GuardarProducto(producto);
-            MessageBox.Show("Producto guardado exitosamente.");
-            CargarProductos();
+                if (string.IsNullOrWhiteSpace(txtStock.Text))
+                {
+                    MessageBox.Show("El Stock del producto es obligatorio ");
+                    return;
+                }
 
-            txtNombre.Clear();
-            txtPrecio.Clear();
-            txtStock.Clear();
+                if (!int.TryParse(txtStock.Text, out int stock))
+                {
+                    MessageBox.Show("El stock solo puede ser numeros");
+                    txtStock.Focus();
+                    return;
+                }
+
+
+                Producto producto = new Producto();
+                producto.Nombre_Producto = txtNombre.Text;
+                producto.Precio_Base = decimal.Parse(txtPrecio.Text);
+                producto.Stock = int.Parse(txtStock.Text);
+                producto.Fecha_Caducidad = dtpFecha.Value;
+                ProductosBLL productosBLL = new ProductosBLL();
+
+                productosBLL.GuardarProducto(producto);
+                MessageBox.Show("Producto guardado exitosamente.");
+                CargarProductos();
+
+                txtNombre.Clear();
+                txtPrecio.Clear();
+                txtStock.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al guardar el producto: " + ex.Message);
+            }
+
 
         }
 
@@ -131,6 +164,11 @@ namespace Heladeria
 
                 txtPrecio.Text = dgvProductos.Rows[e.RowIndex].Cells["Precio_Base"].Value.ToString();
             }
+        }
+
+        private void dgvProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -35,7 +35,7 @@ namespace Heladeria
             DataTable dt = bll.MostrarInventario();
 
             DataView dv = dt.DefaultView;
-            dv.RowFilter = $"NombreProducto LIKE '%{txtBuscar.Text}%'";
+            dv.RowFilter = $"Nombre_Producto LIKE '%{txtBuscar.Text}%'";
 
             dgvInventario.DataSource = dv;
         }

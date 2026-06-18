@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductos));
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             panel1 = new Panel();
             iconButton10 = new FontAwesome.Sharp.IconButton();
             iconButton9 = new FontAwesome.Sharp.IconButton();
@@ -80,7 +80,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(4, 5, 4, 5);
             panel1.Name = "panel1";
-            panel1.Size = new Size(357, 1050);
+            panel1.Size = new Size(357, 972);
             panel1.TabIndex = 0;
             // 
             // iconButton10
@@ -257,7 +257,7 @@
             panel2.Location = new Point(357, 0);
             panel2.Margin = new Padding(4, 5, 4, 5);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1567, 1050);
+            panel2.Size = new Size(1186, 972);
             panel2.TabIndex = 1;
             // 
             // iconButton12
@@ -287,7 +287,7 @@
             txtBuscar.Margin = new Padding(4, 5, 4, 5);
             txtBuscar.Name = "txtBuscar";
             txtBuscar.PlaceholderText = "Nombre del Producto";
-            txtBuscar.Size = new Size(415, 39);
+            txtBuscar.Size = new Size(415, 34);
             txtBuscar.TabIndex = 28;
             // 
             // groupBox2
@@ -307,27 +307,27 @@
             // 
             dgvProductos.AllowUserToAddRows = false;
             dgvProductos.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = Color.FromArgb(255, 248, 240);
-            dgvProductos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(255, 248, 240);
+            dgvProductos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dgvProductos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvProductos.BackgroundColor = Color.White;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = Color.FromArgb(65, 36, 2);
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
-            dgvProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(65, 36, 2);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgvProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgvProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = Color.FromArgb(250, 238, 218);
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = Color.FromArgb(65, 36, 2);
-            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
-            dgvProductos.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(250, 238, 218);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(65, 36, 2);
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dgvProductos.DefaultCellStyle = dataGridViewCellStyle3;
             dgvProductos.Location = new Point(0, 40);
             dgvProductos.Margin = new Padding(4, 5, 4, 5);
             dgvProductos.Name = "dgvProductos";
@@ -338,6 +338,7 @@
             dgvProductos.Size = new Size(1514, 490);
             dgvProductos.TabIndex = 28;
             dgvProductos.CellClick += dgvProductos_CellClick;
+            dgvProductos.CellContentClick += dgvProductos_CellContentClick;
             // 
             // groupBox1
             // 
@@ -368,7 +369,7 @@
             dtpFecha.Format = DateTimePickerFormat.Custom;
             dtpFecha.Location = new Point(889, 177);
             dtpFecha.Name = "dtpFecha";
-            dtpFecha.Size = new Size(181, 39);
+            dtpFecha.Size = new Size(181, 34);
             dtpFecha.TabIndex = 27;
             // 
             // iconButton11
@@ -438,7 +439,7 @@
             txtStock.Margin = new Padding(4, 5, 4, 5);
             txtStock.Name = "txtStock";
             txtStock.PlaceholderText = "¿Cuanto queda del producto?";
-            txtStock.Size = new Size(570, 39);
+            txtStock.Size = new Size(570, 34);
             txtStock.TabIndex = 22;
             // 
             // label4
@@ -448,7 +449,7 @@
             label4.Location = new Point(797, 73);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(83, 32);
+            label4.Size = new Size(70, 28);
             label4.TabIndex = 20;
             label4.Text = "Stock:";
             label4.Click += label4_Click;
@@ -460,7 +461,7 @@
             txtPrecio.Margin = new Padding(4, 5, 4, 5);
             txtPrecio.Name = "txtPrecio";
             txtPrecio.PlaceholderText = " Ingrese precio del producto";
-            txtPrecio.Size = new Size(434, 39);
+            txtPrecio.Size = new Size(434, 34);
             txtPrecio.TabIndex = 19;
             // 
             // txtNombre
@@ -470,7 +471,7 @@
             txtNombre.Margin = new Padding(4, 5, 4, 5);
             txtNombre.Name = "txtNombre";
             txtNombre.PlaceholderText = " Ingrese nombre del producto";
-            txtNombre.Size = new Size(413, 39);
+            txtNombre.Size = new Size(413, 34);
             txtNombre.TabIndex = 18;
             txtNombre.TextChanged += textBox2_TextChanged;
             // 
@@ -481,7 +482,7 @@
             label2.Location = new Point(9, 182);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(93, 32);
+            label2.Size = new Size(76, 28);
             label2.TabIndex = 16;
             label2.Text = "Precio:";
             // 
@@ -492,7 +493,7 @@
             label1.Location = new Point(9, 72);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(115, 32);
+            label1.Size = new Size(94, 28);
             label1.TabIndex = 15;
             label1.Text = "Nombre:";
             // 
@@ -503,20 +504,20 @@
             label12.Location = new Point(626, 182);
             label12.Margin = new Padding(4, 0, 4, 0);
             label12.Name = "label12";
-            label12.Size = new Size(254, 32);
+            label12.Size = new Size(210, 28);
             label12.TabIndex = 14;
             label12.Text = "Fecha de Caducidad :";
             // 
             // FrmProductos
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1924, 1050);
+            AutoScaleMode = AutoScaleMode.None;
+            ClientSize = new Size(1543, 972);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Margin = new Padding(4, 5, 4, 5);
             MaximizeBox = false;
             Name = "FrmProductos";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Productos";
             Load += FrmProductos_Load;
             panel1.ResumeLayout(false);

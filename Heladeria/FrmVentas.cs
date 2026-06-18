@@ -20,11 +20,7 @@ namespace Heladeria
         {
             InitializeComponent();
         }
-        private void CargarVentasMes()
-        {
-            VentasBLL bll = new VentasBLL();
-            dgvVentas.DataSource = bll.VentasDelMes();
-        }
+      
         private void btnGuardarVenta_Click(object sender, EventArgs e)
         {
 
@@ -40,17 +36,15 @@ namespace Heladeria
         }
         private void CargarProductos()
         {
-            productos =
-            ventaBLL.CargarProductos();
+            DataTable productos = ventaBLL.CargarProductos();
 
             cmbProducto.DataSource = null;
-            
 
-            cmbProducto.DisplayMember =
-            "Nombre_Producto";
+            cmbProducto.DisplayMember = "Nombre_Producto";
+            cmbProducto.ValueMember = "ID_Producto";
 
-            cmbProducto.ValueMember =
-            "ID_Producto";
+            cmbProducto.DataSource = productos;
+
             cmbProducto.SelectedIndex = -1;
         }
         private void LimpiarFormulario()
@@ -61,9 +55,7 @@ namespace Heladeria
 
             totalventa = 0;
 
-
-
-            lblTotal.Text = "0.00";
+            RecalcularTotal();
 
             txtDineroRecibido.Clear();
 
@@ -79,14 +71,17 @@ namespace Heladeria
 
             foreach (DataGridViewRow row in dgvVentas.Rows)
             {
-                if (row.Cells["colTotal"].Value != null)
+                if (row.IsNewRow) continue;
+
+                if (row.Cells[6].Value != null &&
+                    decimal.TryParse(row.Cells[6].Value.ToString(), out decimal valor))
                 {
-                    total += Convert.ToDecimal(row.Cells["colTotal"].Value);
+                    total += valor;
                 }
             }
 
             lblTotal.Text = total.ToString("0.00");
-
+            totalventa = total;
         }
         private void label16_Click(object sender, EventArgs e)
         {
@@ -120,6 +115,8 @@ namespace Heladeria
             dtpFecha.Value = DateTime.Now;
             lblNumerodeFactura.Text = ventaBLL.ObtenerSiguienteFactura().ToString();
             txtVendedor.Text = Sesion.Nombre_Completo;
+            txtPrecio.Clear();
+            txtStock.Clear();
 
         }
 
@@ -135,6 +132,7 @@ namespace Heladeria
                 txtStock.Text = producto.Stock.ToString();
                 txtPrecio.Text = producto.Precio_Base.ToString();
             }
+            
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
@@ -169,8 +167,7 @@ namespace Heladeria
 
             totalventa += Subtotal;
 
-
-            lblTotal.Text = totalventa.ToString("N2");
+            RecalcularTotal();
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
@@ -197,9 +194,7 @@ namespace Heladeria
 
                 ventaBLL.GuardarDetalleVenta(detalle);
 
-                ventaBLL.ActualizarStock(
-                    detalle.ID_Producto,
-                    detalle.Cantidad);
+              
             }
 
             MessageBox.Show("Venta guardada correctamente");
@@ -212,7 +207,7 @@ namespace Heladeria
                 frm.CargarDashboard();
             }
 
-            CargarVentasMes();
+           
             LimpiarFormulario();
 
         }

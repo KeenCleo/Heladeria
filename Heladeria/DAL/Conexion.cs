@@ -17,7 +17,7 @@ namespace Heladeria.DAL
         }
         public SqlConnection CerrarConexion()
         {
-            if ( cone.State == System.Data.ConnectionState.Closed  ) cone.Open();
+            if ( cone.State == System.Data.ConnectionState.Open ) cone.Close();
             return cone;
         }
     }

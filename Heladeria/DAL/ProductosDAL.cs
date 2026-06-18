@@ -15,7 +15,9 @@ namespace Heladeria.DAL
             DataTable dt = new DataTable();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con.AbrirConexion();
-            cmd.CommandText = "SELECT ID_Producto, Nombre_Producto, Stock, Precio_Base FROM Producto";
+
+            cmd.CommandText = "SP_MostrarProductos";
+            cmd.CommandType = CommandType.StoredProcedure;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
             con.CerrarConexion();
@@ -26,8 +28,9 @@ namespace Heladeria.DAL
             Conexion con = new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con.AbrirConexion();
-            cmd.CommandText = "INSERT INTO Producto (Nombre_Producto, Stock, Precio_Base, Fecha_Caducidad) VALUES (@Nombre_Producto,@Stock,@Precio_Base, @Fecha_Caducidad)";
-            
+            cmd.CommandText = "SP_GuardarProducto";
+            cmd.CommandType = CommandType.StoredProcedure;
+
             cmd.Parameters.AddWithValue ("@Nombre_Producto", producto.Nombre_Producto);
             cmd.Parameters.AddWithValue("@Stock", producto.Stock);
             cmd.Parameters.AddWithValue("@Precio_Base", producto.Precio_Base);
@@ -45,7 +48,8 @@ namespace Heladeria.DAL
             Conexion cone= new Conexion();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = cone.AbrirConexion();
-            cmd.CommandText = "UPDATE PRODUCTO SET Nombre_Producto = @Nombre_Producto, Stock = @Stock, Precio_Base = @Precio_Base, Fecha_Caducidad = @Fecha_Caducidad WHERE ID_Producto = @ID_Producto";
+            cmd.CommandText = "SP_EditarProducto";
+            cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@ID_Producto", producto.ID_Producto);
             cmd.Parameters.AddWithValue("@Nombre_Producto", producto.Nombre_Producto);
             cmd.Parameters.AddWithValue("@Stock", producto.Stock);
@@ -60,7 +64,8 @@ namespace Heladeria.DAL
             SqlCommand cmd= new SqlCommand();
             cmd.Connection = cone.AbrirConexion();
 
-            cmd.CommandText = "DELETE FROM PRODUCTO WHERE ID_Producto =  @ID_Producto";
+            cmd.CommandText = "SP_EliminarProducto";
+            cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@ID_Producto", idseleccionado);
 
             cmd.ExecuteNonQuery();
@@ -73,8 +78,9 @@ namespace Heladeria.DAL
             SqlCommand cmd= new SqlCommand();
 
             cmd.Connection=con.AbrirConexion();
-            cmd.CommandText = "SELECT ID_Producto , Nombre_Producto, Stock , Precio_Base, Fecha_Caducidad FROM Producto WHERE Nombre_Producto LIKE @TEXT";
-            cmd.Parameters.AddWithValue("@TEXT", "%" + nombre + "%");
+            cmd.CommandText = "SP_BuscarProducto";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Texto", "%" + nombre + "%");
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
@@ -85,23 +91,28 @@ namespace Heladeria.DAL
         public DataTable MostrarInventario()
         {
             Conexion con = new Conexion();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con.AbrirConexion();
+            cmd.CommandText = "SP_MostrarInventario";
+            cmd.CommandType = CommandType.StoredProcedure;
 
-            SqlDataAdapter da = new SqlDataAdapter(" SELECT  Nombre_Producto, Stock FROM Producto ", con.AbrirConexion());
-
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
 
             con.CerrarConexion();
-
             return dt;
         }
 
         public DataTable ProductoMasVendido()
         {
             Conexion con = new Conexion();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con.AbrirConexion();
+            cmd.CommandText = "SP_ProductoMasVendido";
+            cmd.CommandType = CommandType.StoredProcedure;
 
-            SqlDataAdapter da = new SqlDataAdapter("SELECT TOP 1 p.ID_Producto,p.Nombre_Producto,SUM(dv.Cantidad) AS Sub_Total FROM Detalle_Venta dv JOIN Producto p ON dv.ID_Producto = p.ID_Producto GROUP BY p.ID_Producto, p.Nombre_Producto ORDER BY SUM(dv.Cantidad) DESC;", con.AbrirConexion());
-
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
 
@@ -111,8 +122,10 @@ namespace Heladeria.DAL
         public int TotalStock()
         {
             Conexion con = new Conexion();
-
-            SqlCommand cmd = new SqlCommand(@"SELECT ISNULL(SUM(Stock),0)FROM Producto", con.AbrirConexion());
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con.AbrirConexion();
+            cmd.CommandText = "SP_TotalStock";
+            cmd.CommandType = CommandType.StoredProcedure;
 
             int total = Convert.ToInt32(cmd.ExecuteScalar());
 

@@ -277,13 +277,14 @@
             // lblVentasHoy
             // 
             lblVentasHoy.AutoSize = true;
-            lblVentasHoy.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            lblVentasHoy.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
             lblVentasHoy.ForeColor = Color.FromArgb(38, 150, 76);
-            lblVentasHoy.Location = new Point(60, 118);
+            lblVentasHoy.Location = new Point(74, 106);
             lblVentasHoy.Name = "lblVentasHoy";
-            lblVentasHoy.Size = new Size(28, 32);
+            lblVentasHoy.Size = new Size(22, 25);
             lblVentasHoy.TabIndex = 7;
             lblVentasHoy.Text = "0";
+            lblVentasHoy.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -316,18 +317,18 @@
             panel3.Controls.Add(label5);
             panel3.Location = new Point(455, 85);
             panel3.Name = "panel3";
-            panel3.Size = new Size(180, 150);
+            panel3.Size = new Size(209, 150);
             panel3.TabIndex = 2;
             // 
             // lblProductoTop
             // 
-            lblProductoTop.AutoSize = true;
-            lblProductoTop.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            lblProductoTop.Location = new Point(37, 119);
+            lblProductoTop.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
+            lblProductoTop.Location = new Point(14, 104);
             lblProductoTop.Name = "lblProductoTop";
-            lblProductoTop.Size = new Size(42, 32);
+            lblProductoTop.Size = new Size(178, 25);
             lblProductoTop.TabIndex = 10;
             lblProductoTop.Text = "45";
+            lblProductoTop.TextAlign = ContentAlignment.MiddleCenter;
             lblProductoTop.Click += lblProductoTop_Click;
             // 
             // iconPictureBox2
@@ -338,7 +339,7 @@
             iconPictureBox2.IconColor = Color.FromArgb(47, 102, 197);
             iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconPictureBox2.IconSize = 55;
-            iconPictureBox2.Location = new Point(63, 25);
+            iconPictureBox2.Location = new Point(72, 25);
             iconPictureBox2.Name = "iconPictureBox2";
             iconPictureBox2.Size = new Size(60, 55);
             iconPictureBox2.TabIndex = 8;
@@ -348,7 +349,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label5.Location = new Point(3, 85);
+            label5.Location = new Point(14, 83);
             label5.Name = "label5";
             label5.Size = new Size(178, 21);
             label5.TabIndex = 9;
@@ -359,7 +360,7 @@
             panel4.Controls.Add(lblClientes);
             panel4.Controls.Add(iconPictureBox3);
             panel4.Controls.Add(label7);
-            panel4.Location = new Point(641, 85);
+            panel4.Location = new Point(670, 85);
             panel4.Name = "panel4";
             panel4.Size = new Size(180, 150);
             panel4.TabIndex = 3;
@@ -367,12 +368,13 @@
             // lblClientes
             // 
             lblClientes.AutoSize = true;
-            lblClientes.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            lblClientes.Location = new Point(70, 118);
+            lblClientes.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
+            lblClientes.Location = new Point(77, 106);
             lblClientes.Name = "lblClientes";
-            lblClientes.Size = new Size(42, 32);
+            lblClientes.Size = new Size(32, 25);
             lblClientes.TabIndex = 13;
             lblClientes.Text = "12";
+            lblClientes.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // iconPictureBox3
             // 
@@ -391,7 +393,7 @@
             // label7
             // 
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label7.Location = new Point(61, 85);
+            label7.Location = new Point(61, 83);
             label7.Name = "label7";
             label7.Size = new Size(71, 21);
             label7.TabIndex = 12;
@@ -402,7 +404,7 @@
             panel5.Controls.Add(lblStock);
             panel5.Controls.Add(iconPictureBox4);
             panel5.Controls.Add(label9);
-            panel5.Location = new Point(827, 85);
+            panel5.Location = new Point(856, 85);
             panel5.Name = "panel5";
             panel5.Size = new Size(180, 150);
             panel5.TabIndex = 3;
@@ -410,13 +412,14 @@
             // lblStock
             // 
             lblStock.AutoSize = true;
-            lblStock.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            lblStock.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
             lblStock.ForeColor = Color.FromArgb(225, 64, 54);
-            lblStock.Location = new Point(66, 119);
+            lblStock.Location = new Point(85, 106);
             lblStock.Name = "lblStock";
-            lblStock.Size = new Size(28, 32);
+            lblStock.Size = new Size(22, 25);
             lblStock.TabIndex = 16;
             lblStock.Text = "0";
+            lblStock.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // iconPictureBox4
             // 
@@ -498,7 +501,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label11.Location = new Point(1113, 51);
+            label11.Location = new Point(1036, 52);
             label11.Name = "label11";
             label11.Size = new Size(62, 25);
             label11.TabIndex = 12;
@@ -508,7 +511,7 @@
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label12.Location = new Point(1105, 13);
+            label12.Location = new Point(1028, 14);
             label12.Name = "label12";
             label12.Size = new Size(67, 25);
             label12.TabIndex = 13;
@@ -518,7 +521,7 @@
             // 
             lbl_Fecha_Menu_Principal.AutoSize = true;
             lbl_Fecha_Menu_Principal.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            lbl_Fecha_Menu_Principal.Location = new Point(1181, 17);
+            lbl_Fecha_Menu_Principal.Location = new Point(1104, 18);
             lbl_Fecha_Menu_Principal.Name = "lbl_Fecha_Menu_Principal";
             lbl_Fecha_Menu_Principal.Size = new Size(100, 21);
             lbl_Fecha_Menu_Principal.TabIndex = 14;
@@ -533,7 +536,7 @@
             // 
             lbl_Hora_MenuPrincipal.AutoSize = true;
             lbl_Hora_MenuPrincipal.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_Hora_MenuPrincipal.Location = new Point(1181, 55);
+            lbl_Hora_MenuPrincipal.Location = new Point(1104, 56);
             lbl_Hora_MenuPrincipal.Margin = new Padding(2, 0, 2, 0);
             lbl_Hora_MenuPrincipal.Name = "lbl_Hora_MenuPrincipal";
             lbl_Hora_MenuPrincipal.Size = new Size(14, 21);
@@ -568,11 +571,12 @@
             lblDineroHoy.AutoSize = true;
             lblDineroHoy.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             lblDineroHoy.ForeColor = Color.FromArgb(38, 150, 76);
-            lblDineroHoy.Location = new Point(1077, 203);
+            lblDineroHoy.Location = new Point(1080, 191);
             lblDineroHoy.Name = "lblDineroHoy";
             lblDineroHoy.Size = new Size(57, 32);
             lblDineroHoy.TabIndex = 10;
             lblDineroHoy.Text = "C$0";
+            lblDineroHoy.Click += lblDineroHoy_Click;
             // 
             // label3
             // 
