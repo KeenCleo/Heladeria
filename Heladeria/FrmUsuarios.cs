@@ -44,14 +44,22 @@ namespace Heladeria
         private void iconButton12_Click(object sender, EventArgs e)
         {
             (dgvUsuarios.DataSource as DataTable).DefaultView.RowFilter =
+<<<<<<< HEAD
       $"Nombre_Usuario LIKE '%{txtBuscar.Text}%'";
+=======
+      $"NombreUsuario LIKE '%{txtBuscar.Text}%'";
+>>>>>>> e13e385c07ff6dfb5741e5b0e7e06d1209b31970
         }
 
         private void iconButton8_Click(object sender, EventArgs e)
         {
             Usuario u = new Usuario();
 
+<<<<<<< HEAD
             u.ID_Usuario = Convert.ToInt32(dgvUsuarios.CurrentRow.Cells["ID_Usuario"].Value);
+=======
+            u.ID_Usuario = Convert.ToInt32(dgvUsuarios.CurrentRow.Cells["IdUsuario"].Value);
+>>>>>>> e13e385c07ff6dfb5741e5b0e7e06d1209b31970
             u.Nombre_Completo = txtNombreCompleto.Text;
             u.Nombre_Usuario = txtNombreUsuario.Text;
             u.Clave = txtContraseña.Text;
@@ -69,7 +77,11 @@ namespace Heladeria
 
         private void iconButton11_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             int id = Convert.ToInt32(dgvUsuarios.CurrentRow.Cells["ID_Usuario"].Value);
+=======
+            int id = Convert.ToInt32(dgvUsuarios.CurrentRow.Cells["IdUsuario"].Value);
+>>>>>>> e13e385c07ff6dfb5741e5b0e7e06d1209b31970
 
             UsuarioBLL bll = new UsuarioBLL();
             bll.Eliminar(id);
@@ -83,10 +95,13 @@ namespace Heladeria
         {
             CargarUsuarios();
         }
+<<<<<<< HEAD
 
         private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
+=======
+>>>>>>> e13e385c07ff6dfb5741e5b0e7e06d1209b31970
     }
 }

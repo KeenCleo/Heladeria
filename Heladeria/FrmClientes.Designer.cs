@@ -76,7 +76,11 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
+<<<<<<< HEAD
             panel1.Size = new Size(286, 972);
+=======
+            panel1.Size = new Size(250, 729);
+>>>>>>> e13e385c07ff6dfb5741e5b0e7e06d1209b31970
             panel1.TabIndex = 0;
             // 
             // iconButton10
@@ -469,7 +473,11 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+<<<<<<< HEAD
             ClientSize = new Size(1543, 972);
+=======
+            ClientSize = new Size(1350, 729);
+>>>>>>> e13e385c07ff6dfb5741e5b0e7e06d1209b31970
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(panel1);

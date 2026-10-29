@@ -106,7 +106,11 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
+<<<<<<< HEAD
             panel1.Size = new Size(286, 972);
+=======
+            panel1.Size = new Size(250, 729);
+>>>>>>> e13e385c07ff6dfb5741e5b0e7e06d1209b31970
             panel1.TabIndex = 0;
             // 
             // btn_Salir_FrmPrincipal
@@ -442,10 +446,16 @@
             iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton4.IconSize = 30;
             iconButton4.ImageAlign = ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
             iconButton4.Location = new Point(680, 72);
             iconButton4.Margin = new Padding(3, 4, 3, 4);
             iconButton4.Name = "iconButton4";
             iconButton4.Size = new Size(274, 40);
+=======
+            iconButton4.Location = new Point(595, 54);
+            iconButton4.Name = "iconButton4";
+            iconButton4.Size = new Size(240, 30);
+>>>>>>> e13e385c07ff6dfb5741e5b0e7e06d1209b31970
             iconButton4.TabIndex = 32;
             iconButton4.Text = "Agregar nuevo producto";
             iconButton4.UseVisualStyleBackColor = false;
@@ -788,7 +798,11 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(253, 253, 253);
+<<<<<<< HEAD
             ClientSize = new Size(1543, 972);
+=======
+            ClientSize = new Size(1350, 729);
+>>>>>>> e13e385c07ff6dfb5741e5b0e7e06d1209b31970
             Controls.Add(groupBox4);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);

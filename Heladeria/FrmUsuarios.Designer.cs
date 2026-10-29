@@ -82,7 +82,11 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
+<<<<<<< HEAD
             panel1.Size = new Size(286, 972);
+=======
+            panel1.Size = new Size(250, 729);
+>>>>>>> e13e385c07ff6dfb5741e5b0e7e06d1209b31970
             panel1.TabIndex = 0;
             // 
             // iconButton10
@@ -259,7 +263,11 @@
             panel2.Location = new Point(286, 0);
             panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
+<<<<<<< HEAD
             panel2.Size = new Size(1257, 972);
+=======
+            panel2.Size = new Size(1100, 729);
+>>>>>>> e13e385c07ff6dfb5741e5b0e7e06d1209b31970
             panel2.TabIndex = 1;
             // 
             // iconButton12
@@ -285,11 +293,18 @@
             // txtBuscar
             // 
             txtBuscar.Font = new Font("Segoe UI Light", 12F);
+<<<<<<< HEAD
             txtBuscar.Location = new Point(827, 526);
             txtBuscar.Margin = new Padding(3, 4, 3, 4);
             txtBuscar.Name = "txtBuscar";
             txtBuscar.PlaceholderText = " Buscar usuario...";
             txtBuscar.Size = new Size(235, 34);
+=======
+            txtBuscar.Location = new Point(724, 395);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.PlaceholderText = " Buscar usuario...";
+            txtBuscar.Size = new Size(206, 29);
+>>>>>>> e13e385c07ff6dfb5741e5b0e7e06d1209b31970
             txtBuscar.TabIndex = 29;
             // 
             // groupBox2
@@ -330,16 +345,25 @@
             dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             dgvUsuarios.DefaultCellStyle = dataGridViewCellStyle3;
+<<<<<<< HEAD
             dgvUsuarios.Location = new Point(16, 38);
             dgvUsuarios.Margin = new Padding(3, 4, 3, 4);
+=======
+            dgvUsuarios.Location = new Point(14, 28);
+>>>>>>> e13e385c07ff6dfb5741e5b0e7e06d1209b31970
             dgvUsuarios.Name = "dgvUsuarios";
             dgvUsuarios.ReadOnly = true;
             dgvUsuarios.RowHeadersVisible = false;
             dgvUsuarios.RowHeadersWidth = 62;
             dgvUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+<<<<<<< HEAD
             dgvUsuarios.Size = new Size(1214, 340);
             dgvUsuarios.TabIndex = 28;
             dgvUsuarios.CellContentClick += dgvUsuarios_CellContentClick;
+=======
+            dgvUsuarios.Size = new Size(1062, 255);
+            dgvUsuarios.TabIndex = 28;
+>>>>>>> e13e385c07ff6dfb5741e5b0e7e06d1209b31970
             // 
             // groupBox1
             // 
@@ -370,29 +394,50 @@
             // 
             cmbEstado.FormattingEnabled = true;
             cmbEstado.Items.AddRange(new object[] { "Activo", "Inactivo" });
+<<<<<<< HEAD
             cmbEstado.Location = new Point(93, 330);
             cmbEstado.Margin = new Padding(2, 2, 2, 2);
             cmbEstado.Name = "cmbEstado";
             cmbEstado.Size = new Size(187, 36);
+=======
+            cmbEstado.Location = new Point(81, 247);
+            cmbEstado.Margin = new Padding(2);
+            cmbEstado.Name = "cmbEstado";
+            cmbEstado.Size = new Size(164, 29);
+>>>>>>> e13e385c07ff6dfb5741e5b0e7e06d1209b31970
             cmbEstado.TabIndex = 32;
             // 
             // cmbCargo
             // 
             cmbCargo.FormattingEnabled = true;
+<<<<<<< HEAD
             cmbCargo.Location = new Point(93, 268);
             cmbCargo.Margin = new Padding(2, 2, 2, 2);
             cmbCargo.Name = "cmbCargo";
             cmbCargo.Size = new Size(187, 36);
+=======
+            cmbCargo.Location = new Point(81, 201);
+            cmbCargo.Margin = new Padding(2);
+            cmbCargo.Name = "cmbCargo";
+            cmbCargo.Size = new Size(164, 29);
+>>>>>>> e13e385c07ff6dfb5741e5b0e7e06d1209b31970
             cmbCargo.TabIndex = 31;
             // 
             // txtContraseña
             // 
             txtContraseña.Font = new Font("Segoe UI Light", 12F);
+<<<<<<< HEAD
             txtContraseña.Location = new Point(133, 210);
             txtContraseña.Margin = new Padding(3, 4, 3, 4);
             txtContraseña.Name = "txtContraseña";
             txtContraseña.PlaceholderText = " Ingrese su contraseña...";
             txtContraseña.Size = new Size(450, 34);
+=======
+            txtContraseña.Location = new Point(116, 157);
+            txtContraseña.Name = "txtContraseña";
+            txtContraseña.PlaceholderText = " Ingrese su contraseña...";
+            txtContraseña.Size = new Size(394, 29);
+>>>>>>> e13e385c07ff6dfb5741e5b0e7e06d1209b31970
             txtContraseña.TabIndex = 30;
             // 
             // label3
@@ -488,21 +533,35 @@
             // txtNombreUsuario
             // 
             txtNombreUsuario.Font = new Font("Segoe UI Light", 12F);
+<<<<<<< HEAD
             txtNombreUsuario.Location = new Point(209, 142);
             txtNombreUsuario.Margin = new Padding(3, 4, 3, 4);
             txtNombreUsuario.Name = "txtNombreUsuario";
             txtNombreUsuario.PlaceholderText = " Ingrese su usuario...";
             txtNombreUsuario.Size = new Size(450, 34);
+=======
+            txtNombreUsuario.Location = new Point(183, 106);
+            txtNombreUsuario.Name = "txtNombreUsuario";
+            txtNombreUsuario.PlaceholderText = " Ingrese su usuario...";
+            txtNombreUsuario.Size = new Size(394, 29);
+>>>>>>> e13e385c07ff6dfb5741e5b0e7e06d1209b31970
             txtNombreUsuario.TabIndex = 19;
             // 
             // txtNombreCompleto
             // 
             txtNombreCompleto.Font = new Font("Segoe UI Light", 12F);
+<<<<<<< HEAD
             txtNombreCompleto.Location = new Point(209, 70);
             txtNombreCompleto.Margin = new Padding(3, 4, 3, 4);
             txtNombreCompleto.Name = "txtNombreCompleto";
             txtNombreCompleto.PlaceholderText = " Ingrese su nombre completo...";
             txtNombreCompleto.Size = new Size(450, 34);
+=======
+            txtNombreCompleto.Location = new Point(183, 52);
+            txtNombreCompleto.Name = "txtNombreCompleto";
+            txtNombreCompleto.PlaceholderText = " Ingrese su nombre completo...";
+            txtNombreCompleto.Size = new Size(394, 29);
+>>>>>>> e13e385c07ff6dfb5741e5b0e7e06d1209b31970
             txtNombreCompleto.TabIndex = 18;
             // 
             // label2
@@ -529,7 +588,11 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+<<<<<<< HEAD
             ClientSize = new Size(1543, 972);
+=======
+            ClientSize = new Size(1350, 729);
+>>>>>>> e13e385c07ff6dfb5741e5b0e7e06d1209b31970
             Controls.Add(panel2);
             Controls.Add(panel1);
             Margin = new Padding(3, 4, 3, 4);
