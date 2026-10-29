@@ -79,5 +79,11 @@ namespace Heladeria.BLL
             return clienteDAL.BuscarCliente(texto);
             
         }
+
+        public int TotalClientes()
+        {
+            ClienteDAL dal = new ClienteDAL();
+            return dal.TotalClientes();
+        }
     }
 }

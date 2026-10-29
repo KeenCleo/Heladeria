@@ -40,9 +40,9 @@ namespace Heladeria.DAL
 
             cmd.CommandText = "UPDATE Cliente SET Nombre=@Nombre, Telefono=@Telefono, Direccion = @Direccion WHERE ID_Cliente=@ID_Cliente; ";
             cmd.Parameters.AddWithValue("@Nombre ", cliente.Nombre);
-            cmd.Parameters.AddWithValue("@Telefono ", cliente.Telefono);
-            cmd.Parameters.AddWithValue("@Direccion ", cliente.Direccion);
-            cmd.Parameters.AddWithValue("ID_Cliente ", cliente.ID_Cliente);
+            cmd.Parameters.AddWithValue("@Telefono", cliente.Telefono);
+            cmd.Parameters.AddWithValue("@Direccion", cliente.Direccion);
+            cmd.Parameters.AddWithValue("@ID_Cliente", cliente.ID_Cliente);
 
             cmd.ExecuteNonQuery();
             con.CerrarConexion();
@@ -107,6 +107,17 @@ namespace Heladeria.DAL
 
             return tabla;
 
+        }
+        public int TotalClientes()
+        {
+            Conexion con = new Conexion();
+
+            SqlCommand cmd = new SqlCommand(@" SELECT COUNT(*) FROM Cliente", con.AbrirConexion());
+
+            int total = Convert.ToInt32(cmd.ExecuteScalar());
+
+            con.CerrarConexion();
+            return total;
         }
     }
 }

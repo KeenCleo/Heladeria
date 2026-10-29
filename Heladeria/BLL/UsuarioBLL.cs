@@ -2,6 +2,7 @@
 using Heladeria.Entidades;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Text;
 
 namespace Heladeria.BLL
@@ -24,5 +25,11 @@ namespace Heladeria.BLL
             return userDAL.ValidarLoging(usuario);
             
         }
+            UsuarioDAL dal = new UsuarioDAL();
+
+            public void Insertar(Usuario u) => dal.InsertarUsuario(u);
+            public void Editar(Usuario u) => dal.EditarUsuario(u);
+            public void Eliminar(int id) => dal.EliminarUsuario(id);
+            public DataTable Mostrar() => dal.MostrarUsuarios();
     }
 }
