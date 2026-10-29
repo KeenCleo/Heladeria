@@ -86,7 +86,7 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(250, 630);
+            panel1.Size = new Size(250, 729);
             panel1.TabIndex = 0;
             // 
             // iconButton10
@@ -254,7 +254,7 @@
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(250, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1097, 630);
+            panel2.Size = new Size(1100, 729);
             panel2.TabIndex = 1;
             // 
             // iconButton12
@@ -556,7 +556,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1347, 630);
+            ClientSize = new Size(1350, 729);
             Controls.Add(panel2);
             Controls.Add(panel1);
             MaximizeBox = false;
